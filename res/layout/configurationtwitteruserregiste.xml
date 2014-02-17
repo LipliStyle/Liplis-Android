@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--================================================================-->
+<!-- xmlName		: twitterconfiguration.xml						-->
+<!-- 概要			: ツイッターコンフィグ画面定義					-->
+<!-- 																-->
+<!--  LiplisAndroidシステム     									-->
+<!--  Copyright(c) 2011-2011 sachin. All Rights Reserved. 			-->
+<!--================================================================-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/setting_repeat"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llSp0"
+        android:layout_width="fill_parent"
+        android:layout_height="2sp"
+        android:background="@color/black"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/llMaster"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:background="@color/textBack"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/textBack"
+            android:text="@string/twitter_reguser_title"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/llsp1"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTwitterUserRegistPanel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/llTwitterUserRegistSp1"
+                android:layout_width="15dp"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnTwitterUserAdd"
+                android:layout_width="0dip"
+                android:layout_height="40sp"
+                android:layout_weight="10"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/sel_plus"
+                android:padding="5dip"
+                android:text="@string/twitter_reguser_btn1"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/llTwitterUserRegistSp2"
+                android:layout_width="15dp"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnTwitterUserUpd"
+                android:layout_width="0dip"
+                android:layout_height="40sp"
+                android:layout_weight="10"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/sel_upd"
+                android:padding="5dip"
+                android:text="@string/twitter_reguser_btn2"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/llTwitterUserRegistSp3"
+                android:layout_width="15dp"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSp2"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSp1"
+        android:layout_width="fill_parent"
+        android:layout_height="2sp"
+        android:background="@color/black"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lvTwitterUserRegistList"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:layout_marginBottom="50dip" >
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/llButton"
+        android:layout_width="fill_parent"
+        android:layout_height="60sp"
+        android:layout_marginTop="-60sp"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <LinearLayout
+            android:id="@+id/llButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/llsp11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnTwitterUserRegistClose"
+                android:layout_width="0dip"
+                android:layout_height="50sp"
+                android:layout_gravity="left"
+                android:layout_weight="10"
+                android:background="@drawable/button"
+                android:padding="5dip"
+                android:text="@string/configure_close"
+                android:textColor="@color/black" >
+
+            </Button>
+
+            <LinearLayout
+                android:id="@+id/llsp12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

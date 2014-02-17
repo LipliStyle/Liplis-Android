@@ -1,0 +1,6 @@
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/menu_rssurl1"
+		android:title="@string/rss_regurl_menu1"/>
+</menu>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--================================================================-->
+<!-- xmlName		: strings.xml									-->
+<!-- 概要			: プリファレンス定義 							-->
+<!-- 																-->
+<!--  LiplisAndroidシステム     									-->
+<!--  Copyright(c) 2011-2011 sachin. All Rights Reserved. 			-->
+<!--================================================================-->
+<resources>
+    <string name="app_name">Liplis Lili</string>
+
+    <!--==============================================================================================-->
+    <!--セレクター関連定義-->
+    <!--==============================================================================================-->
+    <string name="control_liplis_title">リプリス</string>
+    <string name="control_liplis_text1">リプリスの操作画面です。</string>
+    <string name="control_liplis_text2">操作、設定が行えます。ご不明点はヘルプにてご確認下さい。</string>
+
+    <string name="control_control_title">リプリス 操作</string>
+    <string name="control_control_next">次の話題</string>
+    <string name="control_control_sleep">おやすみ</string>
+    <string name="control_control_battery">電池</string>
+    <string name="control_control_clock">時計</string>
+
+    <string name="control_setting_title">リプリス 設定</string>
+    <string name="control_setting_btn">設定画面を開く</string>
+    <string name="control_voice_btn">音声設定</string>
+
+    <string name="control_setting_topic_title">リプリス 話題設定</string>
+	<string name="control_topic_btn">話題設定</string>
+	<string name="control_topic_filter_btn">フィルタ</string>
+	<string name="control_topic_rss_btn">RSS</string>
+	<string name="control_topic_twitter_btn">ツイッター</string>
+
+    <string name="control_site_title">リプリス サイトとヘルプ</string>
+    <string name="control_intro_btn">説明画面</string>
+    <string name="configure_help_btn"> ヘルプ </string>
+    <string name="configure_site_btn"> サイト </string>
+
+    <string name="control_market_title">リプリス Androidマーケット</string>
+    <string name="configure_market_btn">AndroidMarket Liplis Liliを開く</string>
+    <string name="configure_market_txt">もしよろしければ、評価をお願いいたします。</string>
+
+    <!-- セレクター関連メニュー-->
+	<string name="control_ver_btn">バージョン</string>
+
+	<!--==============================================================================================-->
+    <!--設定関連定義-->
+    <!--==============================================================================================-->
+    <string name="configure_intro">リプリス 設定</string>
+    <string name="configure_intro1">リプリスの設定です。</string>
+    <string name="configure_intro2">おしゃべり頻度の調整や各機能の設定ができます。</string>
+
+    <string name="configure_language">言語</string>
+
+	<string name="configure_up_rate">おしゃべりモード</string>
+	<string name="configure_up_rate1">おしゃべり　[　10秒おき　]</string>
+	<string name="configure_up_rate2">ふつう　　　[　30秒おき　]</string>
+	<string name="configure_up_rate3">ひかえめ　　[　1分おき　 ]</string>
+	<string name="configure_up_rate4">無口　　　　[自動発言なし]</string>
+	<string name="configure_up_rate5">時計とバッテリー [1分おき]</string>
+
+	<string name="configure_ac_rate">アクティブ度</string>
+	<string name="configure_speed1">おてんば　  [3倍速  よく動く]</string>
+	<string name="configure_speed2">ふつう　　  [2倍速  ふつう  ]</string>
+	<string name="configure_speed3">ゆっくり　  [1倍速  ひかえめ]</string>
+	<string name="configure_speed4">エコ　　　　[即表示  1動作  ]</string>
+
+	<string name="configure_window_click">ウインドウクリックの動作</string>
+	<string name="configure_window_click1">記事にジャンプ </string>
+	<string name="configure_window_click2">設定画面を開く </string>
+	<string name="configure_window_click3">何もしない </string>
+
+	<string name="configure_voice">音声でおしゃべり</string>
+	<string name="configure_voice1">音声でおしゃべりする </string>
+
+	<string name="configure_body_click">キャラクタークリックの動作</string>
+	<string name="configure_body_click1">次の話題 </string>
+	<string name="configure_body_click2">設定画面を開く </string>
+	<string name="configure_body_click3">何もしない </string>
+
+	<string name="configure_sitdown">ダブルタップおやすみ</string>
+	<string name="configure_sitdown1">ダブルタップでおやすみする </string>
+
+	<string name="configure_AutoSleep">オートスリープ</string>
+	<string name="configure_AutoSleep1">画面OFF時、自動的におやすみする </string>
+
+	<string name="configure_AutoWaikup">オートウェイクアップ</string>
+	<string name="configure_AutoWaikup1">画面ON時、自動的におきる </string>
+
+	<string name="configure_DisplayIcon">アイコンの表示</string>
+	<string name="configure_DisplayIcon1">常にアイコンを表示する </string>
+
+	<string name="configure_window">ウインドウカラー</string>
+
+	<string name="configure_window_dis">ウインドウ消去</string>
+	<string name="configure_window_dis1">一定時間でウインドウを消去する </string>
+
+	<string name="configure_helth">バッテリー残量シンクロ</string>
+	<string name="configure_helth1">バッテリー残量に応じて、状態変化させる </string>
+
+	<string name="configure_save">設定保存</string>
+	<string name="configure_close">キャンセル</string>
+
+	<!--==============================================================================================-->
+	<!--話題設定関連定義-->
+	<!--==============================================================================================-->
+    <string name="configure_topic_intro">リプリス 話題設定</string>
+    <string name="configure_topic_intro1">おしゃべりする話題について、内容の設定や登録が行えます。</string>
+    <string name="configure_topic_intro2">LiplisのWebサイトでRSSやツイッターユーザーの登録を行うこともできます。</string>
+
+	<string name="control_talk_setting_kidoku">既読の話題設定</string>
+	<string name="control_talk_setting_runout">話題が尽きた時のふるまい</string>
+	<string name="control_talk_setting_runout1">ランダムおしゃべり</string>
+	<string name="control_talk_setting_runout3">何もしない</string>
+
+	<string name="configure_Toipic">おしゃべりのジャンル</string>
+	<string name="configure_Toipic1">ニュース      </string>
+	<string name="configure_Toipic2">2ch           </string>
+	<string name="configure_Toipic3">ニコニコ動画  </string>
+	<string name="configure_Toipic4">RSS           </string>
+	<string name="configure_Toipic5">Twitter パブリックタイムライン       </string>
+	<string name="configure_Toipic6">Twitter マイタイムライン             </string>
+	<string name="configure_Toipic7">Twitter 設定ユーザーツイート         </string>
+	<string name="configure_Toipic8">キャラクターおしゃべり               </string>
+
+	<string name="configure_topic_rss">RSS</string>
+	<string name="configure_topic_twitter">ツイッター</string>
+	<string name="configure_topic_rss_regist">RSS URL 登録</string>
+	<string name="configure_topic_news_filter">話題の検索設定を開く</string>
+	<string name="configure_topic_web_register">WEBで設定する</string>
+	<string name="configure_topic_btn_web_register">ワンタイムパスワード発行</string>
+	<string name="configure_topic_web_link">http://liplis.mine.nu/lipliswiki/webroot/?LiplisSetting</string>
+
+	<string name="configure_filter">話題の検索設定</string>
+	<string name="configure_topic_setting">おしゃべり設定</string>
+	<string name="configure_topic_setting_already_read">既読の話題はおしゃべりしない</string>
+	<string name="configure_range">話題取得の範囲</string>
+
+	<string name="configure_topic_save">設定保存</string>
+	<string name="configure_topic_close">キャンセル</string>
+
+	<!--==============================================================================================-->
+	<!--RSS URL登録関連定義-->
+	<!--==============================================================================================-->
+    <string name="rss_regurl_title">RSS URL 登録</string>
+    <string name="rss_regurl_btn1">RSS URL 追加</string>
+    <string name="rss_regurl_btn2">更新</string>
+
+    <string name="rss_regurl_menu1">全て削除</string>
+
+	<!--==============================================================================================-->
+	<!--ツイッター設定関連定義-->
+	<!--==============================================================================================-->
+    <string name="twitter_liplis_title">Twitter設定</string>
+    <string name="twitter_liplis_text1">Twitterの設定画面です。</string>
+    <string name="twitter_liplis_text2">各種設定、パスコードの取得を行います。</string>
+    <string name="twitter_liplis_text3">ツイッター取得機能を使用するには認証を必ず行なってください。</string>
+    <string name="twitter_liplis_text4">ツイッター認証にはツイッターアカウントが必要です。</string>
+    <string name="control_twitter_btn">ツイッター　　 認証</string>
+    <string name="control_twitter_user_title">ツイッター ユーザーリスト 登録</string>
+    <string name="control_twitter_user_btn">ユーザーリスト 登録</string>
+	<string name="control_twitter_mode_title">ツイッターおしゃべりモード</string>
+	<string name="control_twitter_mode_real">リアルタイム</string>
+	<string name="control_twitter_mode_random">ランダム</string>
+
+	<string name="twitter_mode_title">ツイッターモード</string>
+	<string name="twitter_mode1">時系列</string>
+	<string name="twitter_mode2">ランダム</string>
+
+	<string name="twitter_interval_title">ツイート取得範囲</string>
+	<string name="twitter_oauth">ツイッター認証</string>
+	<string name="twitter_oauthbtn">認証する</string>
+	<string name="twitter_oauthstatus">認証状態</string>
+
+	<!--==============================================================================================-->
+	<!--ツイッター登録関連定義-->
+	<!--==============================================================================================-->
+    <string name="twitter_regist_title">Twitter認証</string>
+    <string name="twitter_regist_text1">Twitterの認証設定を行います。</string>
+    <string name="twitter_regist_text2">連携登録後、表示されるPINコードを</string>
+    <string name="twitter_regist_text3">入力してください。</string>
+
+    <string name="twitter_regist_pin">ピンコード送信</string>
+    <string name="twitter_regist_pin_btn">送信</string>
+
+	<!--==============================================================================================-->
+	<!--ツイッターユーザー登録関連定義-->
+	<!--==============================================================================================-->
+    <string name="twitter_reguser_title">Twitter ユーザー登録</string>
+    <string name="twitter_reguser_btn1">ユーザー 追加</string>
+    <string name="twitter_reguser_btn2">更新</string>
+
+    <string name="twitter_reguser_menu1">自分のフォローユーザーを追加</string>
+    <string name="twitter_reguser_menu2">自分のフォロワーを追加</string>
+    <string name="twitter_reguser_menu3">全て削除</string>
+
+	<!--==============================================================================================-->
+    <!--話題検索設定画面関連定義-->
+	<!--==============================================================================================-->
+    <string name="topic_setting_titile">話題の検索設定</string>
+    <string name="topic_setting_btn1">ワード追加</string>
+    <string name="topic_setting_btn2">更新</string>
+
+    <string name="topic_setting_menu1">全てのチェック選択</string>
+    <string name="topic_setting_menu2">全てのチェック解除</string>
+    <string name="topic_setting_menu3">全て削除</string>
+
+	<!--==============================================================================================-->
+    <!--ボイス設定関連-->
+	<!--==============================================================================================-->
+    <string name="voice_title">リプリスボイス設定</string>
+    <string name="voice_title_intoro1">リプリスのおしゃべり時の音声に関する設定画面です。 </string>
+    <string name="voice_title_intoro2">音声機能を使用するにはAndoroidの設定も必要です。詳しくはヘルプをごらんください。 </string>
+    <string name="voice_title_rate">ボイスレート設定</string>
+    <string name="voice_title_pitch">ボイスピッチ設定</string>
+
+	<!--==============================================================================================-->
+	<!--紹介画面-->
+	<!--==============================================================================================-->
+    <string name="intro_Liplis">おしゃべりウィジェット リプリス</string>
+    <string name="intro_1">ホーム画面上でネットの話題をおしゃべりします♪</string>
+    <string name="intro_2">記事の内容に合わせて表情豊かにおしゃべりします。</string>
+	<string name="intro_3">ウィジェットアプリになりますので、ホーム画面に配置してお楽しみ下さい。</string>
+	<string name="intro_Set">配置方法</string>
+	<string name="intro_Set_1">　1.ホーム画面上の空いている所を長押しします。</string>
+	<string name="intro_Set_2">　2.ウィジェットの追加を選択します。</string>
+	<string name="intro_Set_3">　3.一覧より、「Liplis」を選択して下さい。</string>
+	<string name="intro_Attention">Liplisの特徴とご注意</string>
+	<string name="intro_Attention1">　1.インターネットよりデータを取得します。</string>
+	<string name="intro_Attention2">　2.ネットワークに繋がっていないとおしゃべりできません・・・。</string>
+	<string name="intro_Attention3">　3.おやすみ状態、無口設定、時計設定のときは自動的に通信を行いません。バッテリー消費を抑えられます。</string>
+	<string name="intro_Attention4">　4.自動おやすみ機能を有効にして頂ければ、画面OFFで自動的におやすみします。</string>
+	<string name="intro_Attention5">　5.タスクキラーにより終了した場合、うまく動かないことがあります。</string>
+	<string name="intro_Attention6">　6.おしゃべりにはWebApi「Clalis」を使用しています。</string>
+	<string name="intro_Attention7">　7.Clalisのサーバーはたまに落ちます。。。ごめんなさい。落ちてしまっている場合は少し待って頂ければと思います。ちょっと経つと復活します。</string>
+	<string name="intro_Mail">ご連絡先</string>
+	<string name="intro_Mail1">ご意見、ご要望がありましたら、メールにてお問い合わせいただけると幸せです。</string>
+	<string name="intro_MailAddress">liplistyle@gmail.com</string>
+	<string name="intro_setting">設定画面</string>
+	<string name="intro_close">閉じる</string>
+
+	<!--==============================================================================================-->
+	<!--スモールアプリ 紹介画面-->
+	<!--==============================================================================================-->
+    <string name="intro_small_Liplis">おしゃべりスモールアプリ リプリス</string>
+    <string name="intro_small_1">ホーム画面上でネットの話題をおしゃべりします♪</string>
+    <string name="intro_small_2">記事の内容に合わせて表情豊かにおしゃべりします。</string>
+	<string name="intro_small_3">スモールアプリになりますので、ホーム画面に配置してお楽しみ下さい。</string>
+	<string name="intro_small_small_Set">配置方法</string>
+	<string name="intro_small_Set_1">　1.Xperiaの右下のボタンを押します。</string>
+	<string name="intro_small_Set_2">　2.下に出てくるスモールアプリリストが出てきます。</string>
+	<string name="intro_small_Set_3">　3.Liplisを選択して下さい。</string>
+	<string name="intro_small_Attention">Liplisの特徴とご注意</string>
+	<string name="intro_small_Attention1">　1.Xperia専用のスモールアプリになります。Xperia以外の端末では動作しないので、ご注意下さい。</string>
+	<string name="intro_small_Attention2">　2.インターネットよりデータを取得します。</string>
+	<string name="intro_small_Attention3">　3.ネットワークに繋がっていないとおしゃべりできません・・・。</string>
+	<string name="intro_small_Attention4">　4.おやすみ状態、無口設定、時計設定のときは自動的に通信を行いません。バッテリー消費を抑えられます。</string>
+	<string name="intro_small_Attention5">　5.自動おやすみ機能を有効にして頂ければ、画面OFFで自動的におやすみします。</string>
+	<string name="intro_small_Attention6">　6.タスクキラーにより終了した場合、うまく動かないことがあります。</string>
+	<string name="intro_small_Attention7">　7.おしゃべりにはWebApi「Clalis」を使用しています。</string>
+	<string name="intro_small_Attention8">　8.Clalisのサーバーはたまに落ちます。。。ごめんなさい。落ちてしまっている場合は少し待って頂ければと思います。ちょっと経つと復活します。</string>
+	<string name="intro_small_Mail">ご連絡先</string>
+	<string name="intro_small_Mail1">ご意見、ご要望がありましたら、メールにてお問い合わせいただけると幸せです。</string>
+	<string name="intro_small_MailAddress">liplistyle@gmail.com</string>
+	<string name="intro_small_setting">設定画面</string>
+	<string name="intro_small_close">閉じる</string>
+
+	<!--==============================================================================================-->
+	<!--共通メニュー-->
+	<!--==============================================================================================-->
+	<string name="menu_setting_default">デフォルトに戻す</string>
+
+
+	<!--==============================================================================================-->
+	<!--リストボックスメニューー-->
+	<!--==============================================================================================-->
+	<string-array name="configure_language_jp">
+		<item>日本語</item>
+		<item>英語</item>
+		<item>中国語</item>
+		<item>ポルトガル語</item>
+		<item>ドイツ語</item>
+		<item>アラビア語</item>
+		<item>フランス語</item>
+		<item>ロシア語</item>
+		<item>スペイン語</item>
+		<item>韓国語</item>
+	</string-array>
+	<string-array name="configure_windowColor">
+		<item>カラー1</item>
+		<item>カラー2</item>
+		<item>カラー3</item>
+		<item>カラー4</item>
+		<item>カラー5</item>
+		<item>カラー6</item>
+		<item>カラー7</item>
+	</string-array>
+	<string-array name="configure_Alpha">
+		<item>100%</item>
+		<item>75%</item>
+		<item>50%</item>
+		<item>25%</item>
+		<item>バッテリー連動</item>
+	</string-array>
+	<string-array name="configure_NewsRange">
+		<item>1時間</item>
+		<item>3時間</item>
+		<item>6時間</item>
+		<item>12時間</item>
+		<item>1日</item>
+		<item>3日</item>
+		<item>7日</item>
+		<item>無制限</item>
+	</string-array>
+	<string-array name="configure_Topic">
+	    <item>すべて</item>
+		<item>ニュース</item>
+		<item>2ch</item>
+		<item>ニコニコ動画</item>
+		<item>RSS</item>
+		<item>Twitter パブリック TL</item>
+		<item>Twitter My TL</item>
+		<item>Twitter 設定</item>
+	</string-array>
+
+</resources>

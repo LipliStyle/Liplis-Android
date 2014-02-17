@@ -1,0 +1,12 @@
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/menu_topic_setting_menu1"
+		android:title="@string/topic_setting_menu1"/>
+	<item
+		android:id="@+id/menu_topic_setting_menu2"
+		android:title="@string/topic_setting_menu2"/>
+	<item
+		android:id="@+id/menu_topic_setting_menu3"
+		android:title="@string/topic_setting_menu3"/>
+</menu>

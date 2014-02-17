@@ -1,0 +1,12 @@
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/menu_setting"
+		android:title="@string/intro_setting" android:icon="@drawable/sel_setting"/>
+	<item
+		android:id="@+id/menu_topic"
+		android:title="@string/control_topic_btn" android:icon="@drawable/sel_topic"/>
+	<item
+		android:id="@+id/menu_ver"
+		android:title="@string/control_ver_btn" android:icon="@drawable/sel_ver"/>
+</menu>

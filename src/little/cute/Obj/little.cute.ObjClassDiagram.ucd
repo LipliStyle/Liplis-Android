@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="little.cute.ObjClassDiagram" id="{UMLID=_sqMS4H9tEeGffqdUVmAgBQ,JavaID=little.cute.Obj}" metadata="uml2-1.0" initialized="true" scrolledY="26" tag="10" key="3230303730363239204C69706C6973416E64726F6964">
+  <children xsi:type="editmodel:ClassEditModel" name="ObjLiplisBody" location="261,50" size="192,656" timstampe="4681" stereotype="" id="{UMLID=_7-rwoX9tEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisBody}" runTimeClassModel="calmly_m_List,amazement_p_List,rage_p_List,respect_p_List,getDefaultBody(),respect_m_List,proud_m_List,getLiplisBodyByEmotionList(LCollection;LCollection;),normalList,peace_m_List,rage_m_List,admiration_p_List,setList(),admiration_m_List,joy_p_List,getLiplisBodyId(IIII),selectBody(LCollection;),proud_p_List,peace_p_List,ecstasy_m_List,interest_p_List,calmly_p_List,amazement_m_List,interest_m_List,joy_m_List,ecstasy_p_List,getLiplisBody(II),ObjLiplisBody()">
+    <children xsi:type="editmodel:CompartmentEditModel">
+      <children xsi:type="editmodel:AttributeEditModel" name="normalList" size="84,21" id="{UMLID=_HRco4n9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="joy_p_List" size="84,21" id="{UMLID=_HRXJU39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="joy_m_List" size="86,21" id="{UMLID=_HRdP8n9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="admiration_p_List" size="119,21" id="{UMLID=_HRVUIX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="admiration_m_List" size="121,21" id="{UMLID=_HRWiQX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="peace_p_List" size="100,21" id="{UMLID=_HRZlkX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="peace_m_List" size="102,21" id="{UMLID=_HReeEX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ecstasy_p_List" size="109,21" id="{UMLID=_HRd3AX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ecstasy_m_List" size="111,21" id="{UMLID=_HRaMoX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="amazement_p_List" size="125,21" id="{UMLID=_HRUGA39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="amazement_m_List" size="127,21" id="{UMLID=_HRcB0H9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rage_p_List" size="92,21" id="{UMLID=_HRV7MX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rage_m_List" size="94,21" id="{UMLID=_HRUtEn9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="interest_p_List" size="106,21" id="{UMLID=_HRazsX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="interest_m_List" size="108,21" id="{UMLID=_HRcB039vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="respect_p_List" size="107,21" id="{UMLID=_HRXJUH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="respect_m_List" size="109,21" id="{UMLID=_HRY-gX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="calmly_p_List" size="100,21" id="{UMLID=_HRbawH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="calmly_m_List" size="102,21" id="{UMLID=_HRTe8H9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="proud_p_List" size="98,21" id="{UMLID=_HRXwYn9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="proud_m_List" size="100,21" id="{UMLID=_HRYXcn9vEeGffqdUVmAgBQ}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="171,126">
+      <children xsi:type="editmodel:MethodEditModel" name="ObjLiplisBody" size="105,16" id="{UMLID=_HRgTQH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisBody#ObjLiplisBody()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setList" size="72,16" id="{UMLID=_HRo2In9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisBody#setList()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLiplisBody" size="104,16" id="{UMLID=_HRfFIX9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisBody#getLiplisBody(II)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLiplisBodyId" size="112,16" id="{UMLID=_HRgTQX9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisBody#getLiplisBodyId(IIII)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLiplisBodyByEmotionList" size="171,16" id="{UMLID=_HRly039vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisBody#getLiplisBodyByEmotionList(LCollection;LCollection;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectBody" size="94,16" id="{UMLID=_HRnoBH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisBody#selectBody(LCollection;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDefaultBody" size="114,16" id="{UMLID=_HRo2I39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisBody#getDefaultBody()}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="ナチュラル" methodSorter="ナチュラル" innerClassSorter="ナチュラル" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ObjClock" location="898,50" size="151,533" timstampe="1444" stereotype="" id="{UMLID=_7-uz8H9tEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjClock}" runTimeClassModel="ObjClock(),getMin2(),getHour2(),getHour1(),getMin1(),getYear1(),min1,getYear4(),getYear3(),getMonth1(),updateClockObject(),getDay1(),getClockViewId(Ljava.lang.String;),min2,day2,day1,month1,getDay2(),month2,hour2,hour1,year2,getYear2(),year1,year4,year3,getMonth2()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="64,216">
+      <children xsi:type="editmodel:AttributeEditModel" name="year4" size="57,16" id="{UMLID=_HTTqEn9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="year3" size="57,16" id="{UMLID=_HTURIH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="year2" size="57,16" id="{UMLID=_HTTDAH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="year1" size="57,16" id="{UMLID=_HTTDAn9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="month2" size="64,16" id="{UMLID=_HTR0439vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="month1" size="64,16" id="{UMLID=_HTR04X9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="day2" size="53,16" id="{UMLID=_HTQmwH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="day1" size="53,16" id="{UMLID=_HTRN039vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="hour2" size="57,16" id="{UMLID=_HTSb8H9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="hour1" size="57,16" id="{UMLID=_HTSb8n9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="min2" size="51,16" id="{UMLID=_HTTqEH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="min1" size="51,16" id="{UMLID=_HTRN0X9vEeGffqdUVmAgBQ}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="130,270">
+      <children xsi:type="editmodel:MethodEditModel" name="ObjClock" size="82,16" id="{UMLID=_HTa-0n9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjClock#ObjClock()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="updateClockObject" size="130,16" id="{UMLID=_HTVfQn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjClock#updateClockObject()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getClockViewId" size="115,16" id="{UMLID=_HTWtYn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjClock#getClockViewId(Ljava.lang.String;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getYear4" size="84,16" id="{UMLID=_HTZwsn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjClock#getYear4()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getYear3" size="84,16" id="{UMLID=_HTU4MX9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjClock#getYear3()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getYear2" size="84,16" id="{UMLID=_HTX7g39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjClock#getYear2()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getYear1" size="84,16" id="{UMLID=_HTaXwH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjClock#getYear1()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMonth2" size="90,16" id="{UMLID=_HTZJoH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjClock#getMonth2()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMonth1" size="90,16" id="{UMLID=_HTZJo39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjClock#getMonth1()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDay2" size="80,16" id="{UMLID=_HTU4NH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjClock#getDay2()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDay1" size="80,16" id="{UMLID=_HTWGUH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjClock#getDay1()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getHour2" size="84,16" id="{UMLID=_HTaXw39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjClock#getHour2()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getHour1" size="84,16" id="{UMLID=_HTWGU39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjClock#getHour1()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMin2" size="77,16" id="{UMLID=_HTYikn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjClock#getMin2()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMin1" size="77,16" id="{UMLID=_HTURIn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjClock#getMin1()}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="ナチュラル" methodSorter="ナチュラル" innerClassSorter="ナチュラル" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ObjLiplisLog" location="430,1155" size="129,191" timstampe="279" stereotype="" id="{UMLID=_sqM58H9tEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisLog}" runTimeClassModel="getType(),ObjLiplisLog(Ljava.lang.String;Ljava.lang.String;I),getLog(),serialVersionUID,type,getUrl(),log,url">
+    <children xsi:type="editmodel:CompartmentEditModel" size="108,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="serialVersionUID" size="108,16" id="{UMLID=_HVATMH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="log" size="43,16" id="{UMLID=_HVA6Q39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="url" size="41,16" id="{UMLID=_HVBhUX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="type" size="50,16" id="{UMLID=_HVA6QX9vEeGffqdUVmAgBQ}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="98,72">
+      <children xsi:type="editmodel:MethodEditModel" name="ObjLiplisLog" size="98,16" id="{UMLID=_HVCvc39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisLog#ObjLiplisLog(Ljava.lang.String;Ljava.lang.String;I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLog" size="73,16" id="{UMLID=_HVCvcH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisLog#getLog()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getUrl" size="68,16" id="{UMLID=_HVCIYH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisLog#getUrl()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getType" size="78,16" id="{UMLID=_HVD9k39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisLog#getType()}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="ナチュラル" methodSorter="ナチュラル" innerClassSorter="ナチュラル" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ObjBattery" location="688,50" size="160,587" timstampe="496" stereotype="" id="{UMLID=_7-uM4H9tEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBattery}" runTimeClassModel="batteryScale,battery_100,battery_25,battery_nf,battery_50,getBatteryImageId(),batteryNowLevel,getBatteryNowLevel(),batteryText,getBatteryText(),getBatteryRatel(),setBatteryText(Ljava.lang.String;),setBatteryImageId(I),battery_charge,getBatteryImage(Landroid.content.Intent;),getNon(),battery_75,batteryPlugged,battery_nonBattery,batteryExists,battery_0,battery_37,battery_62,battery_12,ObjBattery(),batteryStatus,battery_non,batteryImageId,battery_87,batteryCheck(Landroid.content.Intent;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="122,360">
+      <children xsi:type="editmodel:AttributeEditModel" name="batteryText" size="83,16" id="{UMLID=_HVh3on9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="batteryImageId" size="99,16" id="{UMLID=_HViesH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="batteryNowLevel" size="112,16" id="{UMLID=_HVh3oH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="batteryScale" size="90,16" id="{UMLID=_HVdmMH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="batteryStatus" size="94,16" id="{UMLID=_HVhQkH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="batteryExists" size="92,16" id="{UMLID=_HVe0U39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="batteryPlugged" size="101,16" id="{UMLID=_HVdmMn9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="battery_100" size="87,16" id="{UMLID=_HVeNQ39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="battery_87" size="81,16" id="{UMLID=_HVjFwX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="battery_75" size="81,16" id="{UMLID=_HVjFw39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="battery_62" size="81,16" id="{UMLID=_HVgCcH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="battery_50" size="81,16" id="{UMLID=_HVgpgn9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="battery_37" size="81,16" id="{UMLID=_HVgCcn9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="battery_25" size="81,16" id="{UMLID=_HVfbYX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="battery_12" size="81,16" id="{UMLID=_HVgpgH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="battery_0" size="75,16" id="{UMLID=_HVe0UX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="battery_non" size="87,16" id="{UMLID=_HVhQkn9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="battery_nf" size="79,16" id="{UMLID=_HVfbY39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="battery_charge" size="103,16" id="{UMLID=_HViesn9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="battery_nonBattery" size="122,16" id="{UMLID=_HVeNQX9vEeGffqdUVmAgBQ}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="139,180">
+      <children xsi:type="editmodel:MethodEditModel" name="ObjBattery" size="91,16" id="{UMLID=_HVmJEn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBattery#ObjBattery()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNon" size="74,16" id="{UMLID=_HVmJE39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBattery#getNon()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBatteryImage" size="118,16" id="{UMLID=_HVkT439vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBattery#getBatteryImage(Landroid.content.Intent;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBatteryText" size="110,16" id="{UMLID=_HVjs0X9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBattery#getBatteryText()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setBatteryText" size="110,16" id="{UMLID=_HVn-Qn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBattery#setBatteryText(Ljava.lang.String;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBatteryImageId" size="126,16" id="{UMLID=_HVnXMX9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBattery#getBatteryImageId()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setBatteryImageId" size="126,16" id="{UMLID=_HVmwIn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBattery#setBatteryImageId(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBatteryNowLevel" size="139,16" id="{UMLID=_HVnXNH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBattery#getBatteryNowLevel()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBatteryRatel" size="114,16" id="{UMLID=_HVkT4H9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBattery#getBatteryRatel()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="batteryCheck" size="104,16" id="{UMLID=_HVliAn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBattery#batteryCheck(Landroid.content.Intent;)}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="ナチュラル" methodSorter="ナチュラル" innerClassSorter="ナチュラル" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ObjBody" location="1099,50" size="133,425" timstampe="867" stereotype="" id="{UMLID=_7-wpIH9tEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBody}" runTimeClassModel="getEye_1_c(),eye_1_c,getEye_2_o(),setEye_1_o(I),setEye_3_o(I),eye_3_c,getLiplisBodyId(II),ObjBody(IIIIII),eye_2_c,setEye_1_c(I),eye_2_o,getEye_3_c(),ObjBody(),eye_1_o,eye_3_o,setEye_2_o(I),getEye_3_o(),getEye_1_o(),setEye_3_c(I),setEye_2_c(I),getEye_2_c()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="71,108">
+      <children xsi:type="editmodel:AttributeEditModel" name="eye_1_o" size="71,16" id="{UMLID=_HW6XsX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="eye_1_c" size="71,16" id="{UMLID=_HW5won9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="eye_2_o" size="71,16" id="{UMLID=_HW5woH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="eye_2_c" size="71,16" id="{UMLID=_HW6-w39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="eye_3_o" size="71,16" id="{UMLID=_HW6Xs39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="eye_3_c" size="71,16" id="{UMLID=_HW6-wX9vEeGffqdUVmAgBQ}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="112,270">
+      <children xsi:type="editmodel:MethodEditModel" name="ObjBody" size="81,16" id="{UMLID=_HXAeUn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBody#ObjBody()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ObjBody" size="81,16" id="{UMLID=_HXAeU39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBody#ObjBody(IIIIII)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLiplisBodyId" size="112,16" id="{UMLID=_HW7l0X9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBody#getLiplisBodyId(II)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getEye_1_o" size="97,16" id="{UMLID=_HXCThH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBody#getEye_1_o()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setEye_1_o" size="97,16" id="{UMLID=_HW-pIn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBody#setEye_1_o(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getEye_1_c" size="97,16" id="{UMLID=_HXCTgX9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBody#getEye_1_c()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setEye_1_c" size="97,16" id="{UMLID=_HW-CE39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBody#setEye_1_c(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getEye_2_o" size="97,16" id="{UMLID=_HW_3QH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBody#getEye_2_o()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setEye_2_o" size="97,16" id="{UMLID=_HW8z8n9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBody#setEye_2_o(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getEye_2_c" size="97,16" id="{UMLID=_HXC6kn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBody#getEye_2_c()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setEye_2_c" size="97,16" id="{UMLID=_HW8M5H9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBody#setEye_2_c(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getEye_3_o" size="97,16" id="{UMLID=_HW-CEH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBody#getEye_3_o()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setEye_3_o" size="97,16" id="{UMLID=_HW_3Q39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBody#setEye_3_o(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getEye_3_c" size="97,16" id="{UMLID=_HW9bAn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBody#getEye_3_c()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setEye_3_c" size="97,16" id="{UMLID=_HW_QMX9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjBody#setEye_3_c(I)}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="ナチュラル" methodSorter="ナチュラル" innerClassSorter="ナチュラル" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ObjLiplisLogList" location="238,1155" size="142,201" timstampe="949" stereotype="" id="{UMLID=_sqNhAX9tEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisLogList}" runTimeClassModel="append(Ljava.lang.String;Ljava.lang.String;I),append(Llittle.cute.Obj.ObjLiplisLog;),logList,ObjLiplisLogList(),serialVersionUID,getLog(I),append(Ljava.lang.String;Ljava.lang.String;),getLogList()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="108,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="serialVersionUID" size="108,16" id="{UMLID=_HYEOQX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="logList" size="66,21" id="{UMLID=_HYDnMH9vEeGffqdUVmAgBQ}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="115,113">
+      <children xsi:type="editmodel:MethodEditModel" name="ObjLiplisLogList" size="115,16" id="{UMLID=_HYFcYn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisLogList#ObjLiplisLogList()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="append" size="76,16" id="{UMLID=_HYGqgn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisLogList#append(Llittle.cute.Obj.ObjLiplisLog;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="append" size="76,16" id="{UMLID=_HYEOQ39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisLogList#append(Ljava.lang.String;Ljava.lang.String;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="append" size="76,16" id="{UMLID=_HYHRkn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisLogList#append(Ljava.lang.String;Ljava.lang.String;I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLogList" size="96,21" id="{UMLID=_HYGDdH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisLogList#getLogList()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLog" size="73,16" id="{UMLID=_HYFcY39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisLogList#getLog(I)}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="ナチュラル" methodSorter="ナチュラル" innerClassSorter="ナチュラル" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ObjR" location="503,50" size="135,826" timstampe="669" stereotype="" id="{UMLID=_7-2vwn9tEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjR}" runTimeClassModel="llLpsAngClock,imBattery09,imBattery08,imBattery07,initNormal(),llLpsSetting,ObjR(I),llClockAndBattery,liplisThinking,layout,liplisSetting,imBattery01,liplisLog,llLpsLog,imBattery02,initLarge(),imBattery05,imDay2,imBattery06,imBattery03,imBattery04,imDay1,imHour2,liplisTalkText,imHour1,llTalkText,imMin2,cls,imMin1,llLpsSleep,liplisBattery,llLpsbattery,liplisAngClock,liplisSleep,liplisImage,imBattery10,imMonth1,imYear3,imYear4,imYear1,liplisWindow,imMonth2,imYear2">
+    <children xsi:type="editmodel:CompartmentEditModel" size="114,702">
+      <children xsi:type="editmodel:AttributeEditModel" name="cls" size="49,21" id="{UMLID=_HY-0Qn9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="layout" size="58,16" id="{UMLID=_HY57wH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="liplisSleep" size="76,16" id="{UMLID=_HZApc39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="liplisLog" size="67,16" id="{UMLID=_HY7J4n9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="liplisSetting" size="82,16" id="{UMLID=_HY6i0H9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="liplisThinking" size="88,16" id="{UMLID=_HY5Us39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="liplisAngClock" size="95,16" id="{UMLID=_HZApcX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="liplisBattery" size="84,16" id="{UMLID=_HZACYX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="llLpsSleep" size="78,16" id="{UMLID=_HY_bUn9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="llLpsLog" size="69,16" id="{UMLID=_HY7J4H9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="llLpsSetting" size="84,16" id="{UMLID=_HY4to39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="llLpsAngClock" size="97,16" id="{UMLID=_HY3fgH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="llLpsbattery" size="85,16" id="{UMLID=_HZACY39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="llTalkText" size="71,16" id="{UMLID=_HY-NMn9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="liplisImage" size="77,16" id="{UMLID=_HZBQgX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="liplisWindow" size="89,16" id="{UMLID=_HZCeo39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="liplisTalkText" size="87,16" id="{UMLID=_HY9mIn9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="llClockAndBattery" size="114,16" id="{UMLID=_HY5UsX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imYear1" size="68,16" id="{UMLID=_HZDFsX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imYear2" size="68,16" id="{UMLID=_HZDFs39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imYear3" size="68,16" id="{UMLID=_HZB3kX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imYear4" size="68,16" id="{UMLID=_HZCeoX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imMonth1" size="74,16" id="{UMLID=_HZB3k39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imMonth2" size="74,16" id="{UMLID=_HZDswH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imDay1" size="64,16" id="{UMLID=_HY8_En9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imDay2" size="64,16" id="{UMLID=_HY7w8n9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imHour1" size="68,16" id="{UMLID=_HY-NMH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imHour2" size="68,16" id="{UMLID=_HY9mIH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imMin1" size="61,16" id="{UMLID=_HY_bUH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imMin2" size="61,16" id="{UMLID=_HY-0QH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imBattery01" size="86,16" id="{UMLID=_HY57wn9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imBattery02" size="86,16" id="{UMLID=_HY6i0n9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imBattery03" size="86,16" id="{UMLID=_HY8YAn9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imBattery04" size="86,16" id="{UMLID=_HY8_EH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imBattery05" size="86,16" id="{UMLID=_HY7w8H9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imBattery06" size="86,16" id="{UMLID=_HY8YAH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imBattery07" size="86,16" id="{UMLID=_HY4toX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imBattery08" size="86,16" id="{UMLID=_HY4Gk39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imBattery09" size="86,16" id="{UMLID=_HY4GkX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="imBattery10" size="86,16" id="{UMLID=_HZBQg39vEeGffqdUVmAgBQ}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="86,54">
+      <children xsi:type="editmodel:MethodEditModel" name="ObjR" size="63,16" id="{UMLID=_HZET0H9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjR#ObjR(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="initNormal" size="86,16" id="{UMLID=_HZET039vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjR#initNormal()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="initLarge" size="81,16" id="{UMLID=_HZDswn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjR#initLarge()}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="ナチュラル" methodSorter="ナチュラル" innerClassSorter="ナチュラル" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ObjPreference" location="50,50" size="161,1055" timstampe="5513" stereotype="" id="{UMLID=_7-2IsH9tEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference}" runTimeClassModel="getLpsTopicNico(),lpsTopic2ch,setTopicNico(I),setSpeed(I),getLpsTopicNews(),lpsTopicNews,setAutoSleep(I),setLanguage(I),setReadFlg(Landroid.content.Context;),getLpsIconCloseCnt(),setAutoWaikup(I),setTopicNews(I),getNewsFlg(),lpsTopicNico,lpsActive,getLpsReftesh(),ObjPreference(Landroid.content.Context;),lpsMode,getLpsAutoWaikup(),lpsIconCloseCnt,lpsLanguage,lpsAutoSleep,lpsWindowDis,getLpsTopic2ch(),lpsInterval,getLpsInterval(),getLpsUid(),lpsReftesh,getLpsActive(),lpsWindowColor,setWindowColor(I),getLpsMode(),getLpsAutoSleep(),setUid(Ljava.lang.String;),checPreferenceData(Landroid.content.Context;),windowCode,getLpsWindowColor(),getPreferenceData(Landroid.content.Context;),getLpsDpSleep(),getLpsWindowClick(),lpsWindowClick,lpsDisplayIcon,setTopic2ch(I),lpsAutoWaikup,getLpsWindowDis(),getLpsLanguage(),getLpsDisplayIcon(),getLpsSpeed(),setMode(I),setLinkCl(I),lpsDpSleep,lpsUid,lpsSpeed,setWindowDis(I),setDisplayIcon(I),getWindowCode()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="108,342">
+      <children xsi:type="editmodel:AttributeEditModel" name="lpsUid" size="58,16" id="{UMLID=_HaDLQ39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lpsLanguage" size="91,16" id="{UMLID=_HaB9IX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lpsMode" size="69,16" id="{UMLID=_HaAvAX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lpsActive" size="74,16" id="{UMLID=_HaAH8H9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lpsSpeed" size="74,16" id="{UMLID=_HaDyUX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lpsWindowClick" size="105,16" id="{UMLID=_HaEZYn9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lpsDpSleep" size="83,16" id="{UMLID=_HaCkM39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lpsAutoSleep" size="93,16" id="{UMLID=_HaB9I39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lpsAutoWaikup" size="101,16" id="{UMLID=_HaFAcn9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lpsWindowColor" size="108,16" id="{UMLID=_HaAH8n9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lpsDisplayIcon" size="98,16" id="{UMLID=_HaFAcH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lpsWindowDis" size="98,16" id="{UMLID=_HaCkMX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lpsTopicNews" size="97,16" id="{UMLID=_HaAvA39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lpsTopic2ch" size="86,16" id="{UMLID=_HaAH9H9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lpsTopicNico" size="89,16" id="{UMLID=_HZ_g4H9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lpsInterval" size="78,16" id="{UMLID=_HaDLQX9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lpsReftesh" size="81,16" id="{UMLID=_HaEZYH9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lpsIconCloseCnt" size="106,16" id="{UMLID=_HaBWE39vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="windowCode" size="94,16" id="{UMLID=_HaBWEX9vEeGffqdUVmAgBQ}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,666">
+      <children xsi:type="editmodel:MethodEditModel" name="ObjPreference" size="110,16" id="{UMLID=_HaU4EX9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#ObjPreference(Landroid.content.Context;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="checPreferenceData" size="140,16" id="{UMLID=_HaRNsn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#checPreferenceData(Landroid.content.Context;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPreferenceData" size="131,16" id="{UMLID=_HaTC4H9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getPreferenceData(Landroid.content.Context;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setReadFlg" size="94,16" id="{UMLID=_HaJR4H9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#setReadFlg(Landroid.content.Context;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setUid" size="70,16" id="{UMLID=_HaQmon9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#setUid(Ljava.lang.String;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMode" size="81,16" id="{UMLID=_HaTp839vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#setMode(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setSpeed" size="86,16" id="{UMLID=_HaWtQX9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#setSpeed(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLinkCl" size="83,16" id="{UMLID=_HaM8RH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#setLinkCl(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setAutoSleep" size="105,16" id="{UMLID=_HaTp8H9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#setAutoSleep(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setAutoWaikup" size="113,16" id="{UMLID=_HaG1o39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#setAutoWaikup(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDisplayIcon" size="110,16" id="{UMLID=_HaLHEn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#setDisplayIcon(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setWindowColor" size="120,16" id="{UMLID=_HaVfI39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#setWindowColor(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setTopicNews" size="109,16" id="{UMLID=_HaURAn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#setTopicNews(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setTopic2ch" size="98,16" id="{UMLID=_HaOxcH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#setTopic2ch(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setTopicNico" size="101,16" id="{UMLID=_HaSb0n9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#setTopicNico(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLanguage" size="103,16" id="{UMLID=_HaMVMn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#setLanguage(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setWindowDis" size="110,16" id="{UMLID=_HaR0w39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#setWindowDis(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLpsMode" size="99,16" id="{UMLID=_HaGOkn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getLpsMode()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLpsActive" size="104,16" id="{UMLID=_HaIDwn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getLpsActive()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLpsSpeed" size="104,16" id="{UMLID=_HaVfIH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getLpsSpeed()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLpsWindowClick" size="135,16" id="{UMLID=_HaKgA39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getLpsWindowClick()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLpsDpSleep" size="113,16" id="{UMLID=_HaLuI39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getLpsDpSleep()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLpsAutoSleep" size="123,16" id="{UMLID=_HaNjUn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getLpsAutoSleep()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLpsAutoWaikup" size="131,16" id="{UMLID=_HaIq0X9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getLpsAutoWaikup()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLpsWindowColor" size="138,16" id="{UMLID=_HaM8QX9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getLpsWindowColor()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLpsDisplayIcon" size="128,16" id="{UMLID=_HaP_k39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getLpsDisplayIcon()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLpsInterval" size="108,16" id="{UMLID=_HaLuIH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getLpsInterval()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLpsReftesh" size="111,16" id="{UMLID=_HaFngH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getLpsReftesh()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWindowCode" size="120,16" id="{UMLID=_HaOKYn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getWindowCode()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLpsIconCloseCnt" size="136,16" id="{UMLID=_HaWGMn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getLpsIconCloseCnt()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLpsUid" size="88,16" id="{UMLID=_HaG1oH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getLpsUid()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLpsTopicNews" size="127,16" id="{UMLID=_HaPYgn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getLpsTopicNews()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLpsTopic2ch" size="116,16" id="{UMLID=_HaOxc39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getLpsTopic2ch()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLpsTopicNico" size="119,16" id="{UMLID=_HaKgAH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getLpsTopicNico()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNewsFlg" size="98,16" id="{UMLID=_HaHcsn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getNewsFlg()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLpsLanguage" size="121,16" id="{UMLID=_HaP_kH9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getLpsLanguage()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLpsWindowDis" size="128,16" id="{UMLID=_HaFng39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjPreference#getLpsWindowDis()}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="ナチュラル" methodSorter="ナチュラル" innerClassSorter="ナチュラル" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ObjLiplisChat" location="50,1155" size="138,245" timstampe="3987" stereotype="" id="{UMLID=_7-sXsX9tEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisChat}" runTimeClassModel="getBatteryInfo(I),getClockInfo(),getGreet(),getChatWord(Ljava.lang.String;),prerequisiteList,discriptionList,nameList,typeList,ObjLiplisChat(),getChatWordStr(Ljava.lang.String;),emotionList">
+    <children xsi:type="editmodel:CompartmentEditModel" size="103,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="nameList" size="72,16" id="{UMLID=_HffE4X9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="typeList" size="67,16" id="{UMLID=_Hfed0X9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="discriptionList" size="95,16" id="{UMLID=_Hfd2wn9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="emotionList" size="83,16" id="{UMLID=_Hffr8X9vEeGffqdUVmAgBQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="prerequisiteList" size="103,16" id="{UMLID=_HfdPsH9vEeGffqdUVmAgBQ}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="117,108">
+      <children xsi:type="editmodel:MethodEditModel" name="ObjLiplisChat" size="102,16" id="{UMLID=_Hfj9Yn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisChat#ObjLiplisChat()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getGreet" size="82,16" id="{UMLID=_Hfg6E39vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisChat#getGreet()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChatWord" size="103,16" id="{UMLID=_HfhhIn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisChat#getChatWord(Ljava.lang.String;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChatWordStr" size="117,16" id="{UMLID=_HfgTAX9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisChat#getChatWordStr(Ljava.lang.String;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBatteryInfo" size="108,16" id="{UMLID=_HfivQn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisChat#getBatteryInfo(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getClockInfo" size="99,16" id="{UMLID=_HfjWUn9vEeGffqdUVmAgBQ,JavaID=little.cute.Obj/ObjLiplisChat#getClockInfo()}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="ナチュラル" methodSorter="ナチュラル" innerClassSorter="ナチュラル" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="14,14" gridOrigin="0,28" rulerUnit="cm" gridShow="true">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" attributeSorter="ナチュラル" methodSorter="ナチュラル" shortPackageNameFormat="true" showClassStereotype="true" showPackageStereotype="true" innerClassSorter="ナチュラル" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showInterfaceStereotype="true" showMethods="true" showAttributes="true" showLiterlas="true" showInnerEntity="true"/>
+</editmodel:ClassDiagramEditModel>

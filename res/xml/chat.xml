@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chat>
+  <version>2.0</version>
+  <!-- ========================================================= -->
+  <!--                        挨拶定義                          -->
+  <!-- ========================================================= -->
+  <chatDiscription>
+    <name>goodmoning</name>
+    <type>greet</type>
+    <discription>おはようございます、ご主人様。</discription>
+    <emotion>1</emotion>
+    <prerequisite>4:00,10:00</prerequisite>
+  </chatDiscription>
+  <chatDiscription>
+    <name>hello </name>
+    <type>greet</type>
+    <discription>こんにちは、ご主人様。</discription>
+    <emotion>1</emotion>
+    <prerequisite>10:00,17:00</prerequisite>
+  </chatDiscription>
+  <chatDiscription>
+    <name>goodNight</name>
+    <type>greet</type>
+    <discription>こんばんは、ご主人様。</discription>
+    <emotion>1</emotion>
+    <prerequisite>17:00,23:59</prerequisite>
+  </chatDiscription>
+  <chatDiscription>
+    <name>otsu</name>
+    <type>greet</type>
+    <discription>今日も1日お疲れ様です。</discription>
+    <emotion>3</emotion>
+    <prerequisite>17:00,23:59</prerequisite>
+  </chatDiscription>
+  <chatDiscription>
+    <name>goodNight</name>
+    <type>greet</type>
+    <discription>こんばんは、ご主人様。</discription>
+    <emotion>1</emotion>
+    <prerequisite>0:00,4:00</prerequisite>
+  </chatDiscription>
+  <chatDiscription>
+    <name>otsu</name>
+    <type>greet</type>
+    <discription>夜遅くまでお疲れ様です。</discription>
+    <emotion>3</emotion>
+    <prerequisite>0:00,4:00</prerequisite>
+  </chatDiscription>
+
+  <!-- ========================================================= -->
+  <!--                      日常のお仕事                         -->
+  <!-- ========================================================= -->
+  <chatDiscription>
+    <name>faildConnectNetwork</name>
+    <type>chat</type>
+    <discription>ネットワークに接続できません・・・。</discription>
+    <emotion>-1</emotion>
+    <prerequisite></prerequisite>
+  </chatDiscription>
+  <chatDiscription>
+    <name>faildGetData</name>
+    <type>chat</type>
+    <discription>データの取得に失敗してしまいました・・・。</discription>
+    <emotion>-1</emotion>
+    <prerequisite></prerequisite>
+  </chatDiscription>
+
+  <!-- ========================================================= -->
+  <!--                      バッテリー関連                         -->
+  <!-- ========================================================= -->
+  <chatDiscription>
+    <name>batteryInfo</name>
+    <type>batteryInfo</type>
+    <discription>現在の残りバッテリーは[?]%です。</discription>
+    <emotion>1</emotion>
+    <prerequisite></prerequisite>
+  </chatDiscription>
+  <chatDiscription>
+    <name>batteryChargeStart</name>
+    <type>batteryChargeStart</type>
+    <discription>バッテリー充電開始です！</discription>
+    <emotion>10</emotion>
+    <prerequisite></prerequisite>
+  </chatDiscription>
+  <chatDiscription>
+    <name>batteryHi</name>
+    <type>batteryHi</type>
+    <discription>バッテリーは十分です！</discription>
+    <emotion>3</emotion>
+    <prerequisite></prerequisite>
+  </chatDiscription>
+  <chatDiscription>
+    <name>batteryMid</name>
+    <type>batteryMid</type>
+    <discription>まだ大丈夫だと思いますが、バッテリーが減ってきています。</discription>
+    <emotion>-3</emotion>
+    <prerequisite></prerequisite>
+  </chatDiscription>
+  <chatDiscription>
+    <name>batteryLow1</name>
+    <type>batteryLow</type>
+    <discription>バッテリーがピンチです・・・。</discription>
+    <emotion>-1</emotion>
+    <prerequisite></prerequisite>
+  </chatDiscription>
+  <chatDiscription>
+    <name>batteryLow2</name>
+    <type>batteryLow</type>
+    <discription>バッテリーを充電して頂けないでしょうか・・・。</discription>
+    <emotion>-1</emotion>
+    <prerequisite></prerequisite>
+  </chatDiscription>
+
+  <!-- ========================================================= -->
+  <!--                         時計関連                          -->
+  <!-- ========================================================= -->
+  <chatDiscription>
+    <name>clockInfo</name>
+    <type>clockInfo</type>
+    <discription>現在 [?] です。</discription>
+    <emotion>-1</emotion>
+    <prerequisite></prerequisite>
+  </chatDiscription>
+</chat>
+

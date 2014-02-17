@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/chkCusLayoutViewRow_t"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/txtCusLayoutViewRow_t"
+        android:layout_width="1920dp"
+        android:layout_height="40sp"
+        android:focusable="false"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</LinearLayout>

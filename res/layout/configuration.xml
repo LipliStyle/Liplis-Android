@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--================================================================-->
+<!-- xmlName		: configuration.xml								-->
+<!-- 概要			: コンフィグ画面定義									-->
+<!-- 																-->
+<!--  LiplisAndroidシステム     									 		-->
+<!--  Copyright(c) 2011-2011 sachin. All Rights Reserved. 			-->
+<!--================================================================-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/setting_repeat">
+
+    <ScrollView
+        android:id="@+id/sclvLiplisConfig"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="50dip" >
+
+        <LinearLayout
+            android:id="@+id/llLiplisConfigMaster"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigBlackLine01"
+                android:layout_width="fill_parent"
+                android:layout_height="2sp"
+                android:background="@color/black"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtLiplisConfigTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/textBack"
+                android:text="@string/configure_intro"
+                android:textColor="@color/black" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigIcon"
+                android:layout_width="fill_parent"
+                android:layout_height="100sp"
+                android:layout_gravity="center_horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/llLiplisConfigIntro"
+                    android:layout_width="220sp"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txtLiplisConfigIntro1"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/configure_intro1"
+                        android:textColor="@color/black" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtLiplisConfigIntro2"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/configure_intro2"
+                        android:textColor="@color/black" >
+                    </TextView>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgLiplisConfigIcon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/icon" >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigBlackLine02"
+                android:layout_width="fill_parent"
+                android:layout_height="2sp"
+                android:background="@color/black"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigRateTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="20sp" >
+
+                <TextView
+                    android:id="@+id/txtLiplisConfigRateTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/textBack"
+                    android:text="@string/configure_up_rate"
+                    android:textColor="@color/black" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioGroup
+                    android:id="@+id/rdTwitterMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/rbRate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/configure_up_rate1"
+                        android:textColor="@color/black" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rbRate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/configure_up_rate2"
+                        android:textColor="@color/black" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rbRate3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/configure_up_rate3"
+                        android:textColor="@color/black" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rbRate4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/configure_up_rate4"
+                        android:textColor="@color/black" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rbRate5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/configure_up_rate5"
+                        android:textColor="@color/black" >
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigBlackLine03"
+                android:layout_width="fill_parent"
+                android:layout_height="2sp"
+                android:background="@color/black"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigActiveTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="20sp" >
+
+                <TextView
+                    android:id="@+id/txtLiplisConfigActiveTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/textBack"
+                    android:text="@string/configure_ac_rate"
+                    android:textColor="@color/black" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigActive"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioGroup
+                    android:id="@+id/rdSpeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/rbSpeed1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/configure_speed1"
+                        android:textColor="@color/black" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rbSpeed2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/configure_speed2"
+                        android:textColor="@color/black" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rbSpeed3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/configure_speed3"
+                        android:textColor="@color/black" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rbSpeed4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/configure_speed4"
+                        android:textColor="@color/black" >
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigBlackLine05"
+                android:layout_width="fill_parent"
+                android:layout_height="2sp"
+                android:background="@color/black"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigWindowClickTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="20sp" >
+
+                <TextView
+                    android:id="@+id/txtLiplisConfigWindowClickTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/textBack"
+                    android:text="@string/configure_window_click"
+                    android:textColor="@color/black" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigWindowClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioGroup
+                    android:id="@+id/rdWindowClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/rbWindowClick3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/configure_window_click1"
+                        android:textColor="@color/black" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rbWindowClick2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/configure_window_click2"
+                        android:textColor="@color/black" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rbWindowClick1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/configure_window_click3"
+                        android:textColor="@color/black" >
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigBlackLine06"
+                android:layout_width="fill_parent"
+                android:layout_height="2sp"
+                android:background="@color/black"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigAutoSleepTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="20sp" >
+
+                <TextView
+                    android:id="@+id/txtLiplisConfigAutoSleepTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/textBack"
+                    android:text="@string/configure_AutoSleep"
+                    android:textColor="@color/black" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigAutoSleep"
+                android:layout_width="fill_parent"
+                android:layout_height="60sp" >
+
+                <CheckBox
+                    android:id="@+id/chkAutoSleep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/configure_AutoSleep1"
+                    android:textColor="@color/black" >
+                </CheckBox>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigBlackLine07"
+                android:layout_width="fill_parent"
+                android:layout_height="2sp"
+                android:background="@color/black"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigAutoWaikupTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="20sp" >
+
+                <TextView
+                    android:id="@+id/txtLiplisConfigAutoWaikupTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/textBack"
+                    android:text="@string/configure_AutoWaikup"
+                    android:textColor="@color/black" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigAutoWaikup"
+                android:layout_width="fill_parent"
+                android:layout_height="60sp" >
+
+                <CheckBox
+                    android:id="@+id/chkAutoWaikup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/configure_AutoWaikup1"
+                    android:textColor="@color/black" >
+                </CheckBox>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigBlackLine08"
+                android:layout_width="fill_parent"
+                android:layout_height="2sp"
+                android:background="@color/black"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigDisplayIconTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="20sp" >
+
+                <TextView
+                    android:id="@+id/txtLiplisConfigDisplayIcon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/textBack"
+                    android:text="@string/configure_DisplayIcon"
+                    android:textColor="@color/black" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigDisplayIcon"
+                android:layout_width="fill_parent"
+                android:layout_height="60sp" >
+
+                <CheckBox
+                    android:id="@+id/chkDisplayIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/configure_DisplayIcon1"
+                    android:textColor="@color/black" >
+                </CheckBox>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigBlackLine09"
+                android:layout_width="fill_parent"
+                android:layout_height="2sp"
+                android:background="@color/black"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigWindowDisTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="20sp" >
+
+                <TextView
+                    android:id="@+id/txtLiplisConfigWindowDis"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/textBack"
+                    android:text="@string/configure_window_dis"
+                    android:textColor="@color/black" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigWindowDis"
+                android:layout_width="fill_parent"
+                android:layout_height="50sp" >
+
+                <CheckBox
+                    android:id="@+id/chkWindowDis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/configure_window_dis1"
+                    android:textColor="@color/black" >
+                </CheckBox>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigBlackLine10"
+                android:layout_width="fill_parent"
+                android:layout_height="2sp"
+                android:background="@color/black"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigHelthTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="20sp" >
+
+                <TextView
+                    android:id="@+id/txtLiplisConfigHelthTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/textBack"
+                    android:text="@string/configure_helth"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigHelth"
+                android:layout_width="fill_parent"
+                android:layout_height="50sp" >
+
+                <CheckBox
+                    android:id="@+id/chkHelth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/configure_helth1"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigBlackLine11"
+                android:layout_width="fill_parent"
+                android:layout_height="2sp"
+                android:background="@color/black"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigWindowTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="20sp" >
+
+                <TextView
+                    android:id="@+id/txtLiplisConfigWindowTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/textBack"
+                    android:text="@string/configure_window"
+                    android:textColor="@color/black" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLiplisConfigWindow"
+                android:layout_width="fill_parent"
+                android:layout_height="50sp" >
+
+                <Spinner
+                    android:id="@+id/spWindow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/configure_windowColor" >
+                </Spinner>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llLiplisConfigButton"
+        android:layout_width="fill_parent"
+        android:layout_height="60sp"
+        android:layout_marginTop="-60sp"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <LinearLayout
+            android:id="@+id/llLiplisConfigButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnLiplisConfigSave"
+                android:layout_width="0dip"
+                android:layout_height="50sp"
+                android:layout_gravity="right"
+                android:layout_weight="10"
+                android:background="@drawable/button"
+                android:padding="5dip"
+                android:text="@string/configure_save"
+                android:textColor="@color/black" >
+
+</Button>
+
+            <LinearLayout
+                android:id="@+id/llsp10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+</LinearLayout>
+
+            <Button
+                android:id="@+id/btnLiplisConfigClose"
+                android:layout_width="0dip"
+                android:layout_height="50sp"
+                android:layout_gravity="left"
+                android:layout_weight="10"
+                android:background="@drawable/button"
+                android:padding="5dip"
+                android:text="@string/configure_close"
+                android:textColor="@color/black" >
+
+</Button>
+        </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>

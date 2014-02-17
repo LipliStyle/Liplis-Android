@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--====================================================================-->
+<!-- xmlName		: widget.xml									    -->
+<!-- 概要			: ウィジェット画面定義							    -->
+<!-- 																    -->
+<!--  LiplisAndroidシステム     									    -->
+<!--  Copyright(c) 2011-2011 sachin. All Rights Reserved. 			    -->
+<!--                                                                    -->
+<!-- TIPS                                                               -->
+<!-- テキストにはsp、レイアウトにはdipを設定すると解像度による崩れがない-->
+<!--                                                                    -->
+<!--                                                                    -->
+<!--====================================================================-->
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/FrameLayoutLar">
+	<!--====================================================================-->
+	<!--                         ライナーレイアウト                         -->
+	<!--====================================================================-->
+	
+	
+	<!--====================================================================-->
+	<!--                        テキストビュー                              -->
+	<!--====================================================================-->
+    <ImageView android:drawingCacheQuality="high" android:scaleType="fitXY" android:src="@drawable/window" android:id="@+id/liplisWindowLar" android:layout_height="96dp" android:layout_width="160dp"></ImageView>
+    <LinearLayout android:orientation="vertical" android:layout_width="158sp" android:id="@+id/llClockAndBatteryLar" android:layout_height="100sp" android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1Lar"
+            android:layout_width="fill_parent"
+            android:layout_height="2sp"
+            android:orientation="horizontal" >
+</LinearLayout>
+        <LinearLayout android:layout_gravity="left" android:layout_width="fill_parent" android:id="@+id/llYearLar" android:layout_height="22sp">
+            <ImageView android:layout_width="10sp" android:id="@+id/imSpase0Lar" android:layout_height="22sp"></ImageView>
+            <ImageView android:src="@drawable/clock_2" android:layout_width="15sp" android:id="@+id/imYear4Lar" android:layout_height="22sp"></ImageView>
+            <ImageView android:src="@drawable/clock_0" android:layout_width="15sp" android:id="@+id/imYear3Lar" android:layout_height="22sp"></ImageView>
+            <ImageView android:src="@drawable/clock_1" android:layout_width="15sp" android:id="@+id/imYear2Lar" android:layout_height="22sp"></ImageView>
+            <ImageView android:src="@drawable/clock_1" android:layout_width="15sp" android:id="@+id/imYear1Lar" android:layout_height="22sp"></ImageView>
+            <ImageView android:src="@drawable/clock_slash" android:layout_width="7sp" android:id="@+id/imSlash1Lar" android:layout_height="22sp"></ImageView>
+            <ImageView android:src="@drawable/clock_0" android:layout_width="15sp" android:id="@+id/imMonth2Lar" android:layout_height="22sp"></ImageView>
+            <ImageView android:src="@drawable/clock_0" android:layout_width="15sp" android:id="@+id/imMonth1Lar" android:layout_height="22sp"></ImageView>
+            <ImageView android:src="@drawable/clock_slash" android:layout_width="7sp" android:id="@+id/imSlash2Lar" android:layout_height="22sp"></ImageView>
+            <ImageView android:src="@drawable/clock_0" android:layout_width="15sp" android:id="@+id/imDay2Lar" android:layout_height="22sp"></ImageView>
+            <ImageView android:src="@drawable/clock_0" android:layout_width="15sp" android:id="@+id/imDay1Lar" android:layout_height="22sp"></ImageView>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="left" android:layout_width="fill_parent" android:id="@+id/llHourLar" android:layout_height="55sp">
+            <ImageView android:layout_width="2sp" android:id="@+id/imSpase1Lar" android:layout_height="55sp"></ImageView>
+            <ImageView android:src="@drawable/clock_0" android:layout_width="33sp" android:id="@+id/imHour2Lar" android:layout_height="55sp"></ImageView>
+            <ImageView android:src="@drawable/clock_0" android:layout_width="33sp" android:id="@+id/imHour1Lar" android:layout_height="55sp"></ImageView>
+            <ImageView android:src="@drawable/clock_conma" android:layout_width="20sp" android:id="@+id/imConmaLar" android:layout_height="55sp"></ImageView>
+            <ImageView android:src="@drawable/clock_0" android:layout_width="33sp" android:id="@+id/imMin2Lar" android:layout_height="55sp"></ImageView>
+            <ImageView android:src="@drawable/clock_0" android:layout_gravity="left" android:layout_width="33sp" android:id="@+id/imMin1Lar" android:layout_height="55sp"></ImageView>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="left" android:layout_width="fill_parent" android:id="@+id/llBatteryLar" android:layout_height="13sp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2Lar"
+                android:layout_width="2sp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+</LinearLayout>
+            <TextView android:textSize="9sp" android:layout_width="wrap_content" android:textColor="@color/black" android:layout_height="wrap_content" android:id="@+id/txtPowerLar" android:text="Pow"></TextView>
+            <ImageView android:src="@drawable/ico_batterygage" android:id="@+id/imBattery01Lar" android:layout_width="13sp" android:layout_height="13sp"></ImageView>
+            <ImageView android:src="@drawable/ico_batterygage" android:id="@+id/imBattery02Lar" android:layout_width="13sp" android:layout_height="13sp"></ImageView>
+            <ImageView android:src="@drawable/ico_batterygage" android:id="@+id/imBattery03Lar" android:layout_width="13sp" android:layout_height="13sp"></ImageView>
+            <ImageView android:src="@drawable/ico_batterygage" android:id="@+id/imBattery04Lar" android:layout_width="13sp" android:layout_height="13sp"></ImageView>
+            <ImageView android:src="@drawable/ico_batterygage" android:id="@+id/imBattery05Lar" android:layout_width="13sp" android:layout_height="13sp"></ImageView>
+            <ImageView android:src="@drawable/ico_batterygage" android:id="@+id/imBattery06Lar" android:layout_width="13sp" android:layout_height="13sp"></ImageView>
+            <ImageView android:src="@drawable/ico_batterygage" android:id="@+id/imBattery07Lar" android:layout_width="13sp" android:layout_height="13sp"></ImageView>
+            <ImageView android:src="@drawable/ico_batterygage" android:id="@+id/imBattery08Lar" android:layout_width="13sp" android:layout_height="13sp"></ImageView>
+            <ImageView android:src="@drawable/ico_batterygage" android:id="@+id/imBattery09Lar" android:layout_width="13sp" android:layout_height="13sp"></ImageView>
+            <ImageView android:src="@drawable/ico_batterygage" android:id="@+id/imBattery10Lar" android:layout_width="13sp" android:layout_height="13sp"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/llTalkTextLar" android:layout_height="96dp" android:layout_width="160dp">
+        <TextView android:text="ローディングなう♪" android:layout_gravity="top|left" android:textColor="@color/black" android:layout_marginBottom="2dp" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_marginTop="2dp" android:id="@+id/liplisTalkTextLar" android:layout_height="90dp" android:layout_width="156dp" android:textSize="12sp"></TextView>
+    </LinearLayout>
+    <ImageView android:scaleType="fitEnd" android:layout_gravity="bottom|right" android:layout_height="fill_parent" android:layout_width="wrap_content" android:id="@+id/liplisImageLar"></ImageView>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|left" android:orientation="vertical" android:id="@+id/llLeftIconLar">
+        <LinearLayout android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/llLeft1Lar">
+            <LinearLayout android:id="@+id/llLpsSleepLar" android:layout_width="50sp" android:layout_height="50sp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout5Lar"
+                    android:layout_width="5sp"
+                    android:layout_height="46sp"
+                    android:orientation="horizontal" >
+</LinearLayout>
+                <ImageView android:src="@drawable/ico_zzz" android:layout_gravity="center_vertical" android:id="@+id/liplisSleepLar" android:layout_width="45sp" android:layout_height="45sp"></ImageView>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/llLpsLogLar" android:layout_width="50sp" android:layout_height="50sp">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout01Lar"
+                    android:layout_width="5sp"
+                    android:layout_height="46sp"
+                    android:orientation="horizontal" >
+</LinearLayout>
+                <ImageView android:src="@drawable/ico_log" android:layout_gravity="center_vertical" android:id="@+id/liplisLogLar" android:layout_width="45sp" android:layout_height="45sp"></ImageView>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/llLpsSettingLar" android:layout_width="50sp" android:layout_height="50sp">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout02Lar"
+                    android:layout_width="5sp"
+                    android:layout_height="46sp"
+                    android:orientation="horizontal" >
+</LinearLayout>
+                <ImageView android:src="@drawable/ico_setting" android:layout_gravity="center_vertical" android:id="@+id/liplisSettingLar" android:layout_width="45sp" android:layout_height="45sp"></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/llLeft2Lar">
+
+            <LinearLayout
+                android:id="@+id/llLpsThinkingLar"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout03Lar"
+                    android:layout_width="5sp"
+                    android:layout_height="46sp"
+                    android:orientation="horizontal" >
+</LinearLayout>
+                <ImageView android:src="@drawable/ico_thinking_not" android:layout_gravity="center_vertical" android:id="@+id/liplisThinkingLar" android:layout_width="45sp" android:layout_height="45sp"></ImageView>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/llLpsAngClockLar" android:layout_width="50sp" android:layout_height="50sp">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout04Lar"
+                    android:layout_width="5sp"
+                    android:layout_height="46sp"
+                    android:orientation="horizontal" >
+</LinearLayout>
+                <AnalogClock android:background="@drawable/ico_back" android:layout_gravity="center_vertical" android:id="@+id/liplisAngClockLar" android:layout_width="45sp" android:layout_height="45sp"></AnalogClock>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/llLpsbatteryLar" android:layout_width="50sp" android:layout_height="50sp">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout05Lar"
+                    android:layout_width="5sp"
+                    android:layout_height="46sp"
+                    android:orientation="horizontal" >
+</LinearLayout>
+                <ImageView android:src="@drawable/battery_100" android:layout_gravity="center_vertical" android:id="@+id/liplisBatteryLar" android:layout_width="45sp" android:layout_height="45sp"></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

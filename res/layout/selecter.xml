@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--================================================================-->
+<!-- xmlName		: configuration.xml								-->
+<!-- 概要			: コンフィグ画面定義									-->
+<!-- 																-->
+<!--  LiplisAndroidシステム     									 		-->
+<!--  Copyright(c) 2011-2011 sachin. All Rights Reserved. 			-->
+<!--================================================================-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/setting_repeat" android:layout_gravity="center">
+    <ScrollView android:layout_marginBottom="60dip" android:layout_width="fill_parent" android:id="@+id/sclv" android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/llMaster"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llBkackLine0"
+                android:layout_width="fill_parent"
+                android:layout_height="2sp"
+                android:background="@color/black"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/textBack"
+                android:text="@string/control_liplis_title"
+                android:textColor="@color/black" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/llIcon"
+                android:layout_width="fill_parent"
+                android:layout_height="100sp"
+                android:layout_gravity="center_horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/llIntro"
+                    android:layout_width="220sp"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txtIntro1"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/configure_intro1"
+                        android:textColor="@color/black" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtIntro2"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/control_liplis_text2"
+                        android:textColor="@color/black" >
+                    </TextView>
+
+                    <LinearLayout
+                        android:id="@+id/llSpaseIntoro"
+                        android:layout_width="fill_parent"
+                        android:layout_height="5sp"
+                        android:orientation="horizontal"
+                        android:padding="5dp" >
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtVersion"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text="バージョン"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivIcon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/icon" >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBkackLine1"
+                android:layout_width="fill_parent"
+                android:layout_height="2sp"
+                android:background="@color/black"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout05"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20sp"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llNewsFilter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20sp"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtControllerTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/textBack"
+                android:text="@string/control_control_title"
+                android:textColor="@color/black" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/llSp0"
+                android:layout_width="fill_parent"
+                android:layout_height="5sp"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llControlBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="55sp" >
+
+                <LinearLayout
+                    android:id="@+id/llControlSp1"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSelectNext"
+                    android:layout_width="0dip"
+                    android:layout_height="50sp"
+                    android:layout_gravity="right"
+                    android:layout_weight="10"
+                    android:background="@drawable/button"
+                    android:drawableLeft="@drawable/sel_next"
+                    android:padding="5dip"
+                    android:text="@string/control_control_next"
+                    android:textColor="@color/black" >
+                </Button>
+
+                <LinearLayout
+                    android:id="@+id/llControlSp2"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSelectSleep"
+                    android:layout_width="0dip"
+                    android:layout_height="50sp"
+                    android:layout_gravity="right"
+                    android:layout_weight="10"
+                    android:background="@drawable/button"
+                    android:drawableLeft="@drawable/sel_zzz"
+                    android:padding="5dip"
+                    android:text="@string/control_control_sleep"
+                    android:textColor="@color/black" >
+                </Button>
+
+                <LinearLayout
+                    android:id="@+id/llControlSp3"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSelectBattery"
+                    android:layout_width="0dip"
+                    android:layout_height="50sp"
+                    android:layout_gravity="right"
+                    android:layout_weight="10"
+                    android:background="@drawable/button"
+                    android:drawableLeft="@drawable/sel_battery"
+                    android:padding="5dip"
+                    android:text="@string/control_control_battery"
+                    android:textColor="@color/black" >
+                </Button>
+
+                <LinearLayout
+                    android:id="@+id/llControlSp4"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSelectClock"
+                    android:layout_width="0dip"
+                    android:layout_height="50sp"
+                    android:layout_gravity="right"
+                    android:layout_weight="10"
+                    android:background="@drawable/button"
+                    android:drawableLeft="@drawable/sel_clock"
+                    android:padding="5dip"
+                    android:text="@string/control_control_clock"
+                    android:textColor="@color/black" >
+                </Button>
+
+                <LinearLayout
+                    android:id="@+id/llControlSp5"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSp1"
+                android:layout_width="fill_parent"
+                android:layout_height="5sp"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBlackLine2"
+                android:layout_width="fill_parent"
+                android:layout_height="2sp"
+                android:background="@color/black"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtSetTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/textBack"
+                android:text="@string/control_setting_title"
+                android:textColor="@color/black" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/llSpase2"
+                android:layout_width="fill_parent"
+                android:layout_height="5sp"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llControlSetting"
+                android:layout_width="fill_parent"
+                android:layout_height="55sp" >
+
+                <LinearLayout
+                    android:id="@+id/llControlSettingSp1"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSelectSetting"
+                    android:layout_width="0dip"
+                    android:layout_height="50sp"
+                    android:layout_gravity="right"
+                    android:layout_weight="10"
+                    android:background="@drawable/button"
+                    android:drawableLeft="@drawable/sel_setting"
+                    android:padding="5dip"
+                    android:text="@string/intro_setting"
+                    android:textColor="@color/black" >
+                </Button>
+
+                <LinearLayout
+                    android:id="@+id/llControlSettingSp2"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSelectVoice"
+                    android:layout_width="0dip"
+                    android:layout_height="50sp"
+                    android:layout_weight="10"
+                    android:background="@drawable/button"
+                    android:drawableLeft="@drawable/sel_voice"
+                    android:padding="5dip"
+                    android:text="@string/control_voice_btn"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/llControlSettingSp3"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSpase3"
+                android:layout_width="fill_parent"
+                android:layout_height="5sp"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBlackLine6"
+                android:layout_width="fill_parent"
+                android:layout_height="2sp"
+                android:background="@color/black"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtSetTopicTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/textBack"
+                android:text="@string/control_setting_topic_title"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/llSpase7"
+                android:layout_width="fill_parent"
+                android:layout_height="5sp"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTopicSetting"
+                android:layout_width="fill_parent"
+                android:layout_height="55sp" >
+
+                <LinearLayout
+                    android:id="@+id/llTopicSettingSp1"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSelectTopic"
+                    android:layout_width="0dip"
+                    android:layout_height="50sp"
+                    android:layout_weight="10"
+                    android:background="@drawable/button"
+                    android:drawableLeft="@drawable/sel_topic"
+                    android:padding="5dip"
+                    android:text="@string/control_topic_btn"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/llTopicSettingSp2"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnNewsFilterSetting"
+                    android:layout_width="0dip"
+                    android:layout_height="50sp"
+                    android:layout_weight="10"
+                    android:background="@drawable/button"
+                    android:drawableLeft="@drawable/sel_search"
+                    android:padding="5dip"
+                    android:text="@string/control_topic_filter_btn"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/llTopicSettingSp3"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="5sp"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout07"
+                android:layout_width="fill_parent"
+                android:layout_height="55sp" >
+
+                <LinearLayout
+                    android:id="@+id/llTopicSettingSp5"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnRssUrlRegister"
+                    android:layout_width="0dip"
+                    android:layout_height="50sp"
+                    android:layout_weight="10"
+                    android:background="@drawable/button"
+                    android:drawableLeft="@drawable/sel_rss"
+                    android:padding="5dip"
+                    android:text="@string/control_topic_rss_btn"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/llTopicSettingSp6"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnConfigTopicTwitter"
+                    android:layout_width="0dip"
+                    android:layout_height="50sp"
+                    android:layout_weight="10"
+                    android:background="@drawable/button"
+                    android:drawableLeft="@drawable/sel_twitter"
+                    android:padding="5dip"
+                    android:text="@string/control_topic_twitter_btn"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/llTopicSettingSp7"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSpase8"
+                android:layout_width="fill_parent"
+                android:layout_height="5sp"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBlackLine4"
+                android:layout_width="fill_parent"
+                android:layout_height="2sp"
+                android:background="@color/black"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtSite"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/textBack"
+                android:text="@string/control_site_title"
+                android:textColor="@color/black" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/llSpase5"
+                android:layout_width="fill_parent"
+                android:layout_height="5sp"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llControlSite"
+                android:layout_width="fill_parent"
+                android:layout_height="55sp" >
+
+                <LinearLayout
+                    android:id="@+id/llControlSiteSp1"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSelectIntro"
+                    android:layout_width="0dip"
+                    android:layout_height="50sp"
+                    android:layout_weight="10"
+                    android:background="@drawable/button"
+                    android:drawableLeft="@drawable/sel_intro"
+                    android:padding="5dip"
+                    android:text="@string/control_intro_btn"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/llControlSiteSp2"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnCtlSite"
+                    android:layout_width="0dip"
+                    android:layout_height="50sp"
+                    android:layout_gravity="right"
+                    android:layout_weight="10"
+                    android:background="@drawable/button"
+                    android:drawableLeft="@drawable/sel_in"
+                    android:padding="5dip"
+                    android:text="@string/configure_site_btn"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" >
+                </Button>
+
+                <LinearLayout
+                    android:id="@+id/llControlSiteSp3"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnCtlHelp"
+                    android:layout_width="0dip"
+                    android:layout_height="50sp"
+                    android:layout_weight="10"
+                    android:background="@drawable/button"
+                    android:drawableLeft="@drawable/sel_help"
+                    android:padding="5dip"
+                    android:text="@string/configure_help_btn"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/llControlSiteSp4"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBlackLine5"
+                android:layout_width="fill_parent"
+                android:layout_height="2sp"
+                android:background="@color/black"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtMarket"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/textBack"
+                android:text="@string/control_market_title"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/llSpase6"
+                android:layout_width="fill_parent"
+                android:layout_height="5sp"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMarket"
+                android:layout_width="fill_parent"
+                android:layout_height="55sp" >
+
+                <LinearLayout
+                    android:id="@+id/llMarketSp1"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnMarket"
+                    android:layout_width="0dip"
+                    android:layout_height="50sp"
+                    android:layout_gravity="right"
+                    android:layout_weight="10"
+                    android:background="@drawable/button"
+                    android:drawableLeft="@drawable/sel_droid"
+                    android:padding="5dip"
+                    android:text="@string/configure_market_btn"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/llMarketSp2"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtOnegai"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/configure_market_txt"
+                android:textColor="@color/black" />
+        </LinearLayout>
+       
+    </ScrollView>
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_marginTop="-60sp" android:layout_height="60sp" android:orientation="horizontal" android:id="@+id/llButton" android:padding="5dip">
+        <LinearLayout android:layout_height="wrap_content" android:id="@+id/llButton" android:orientation="horizontal" android:gravity="left" android:layout_gravity="left" android:layout_width="fill_parent">
+
+            <Button
+                android:id="@+id/btnSelectClose"
+                android:layout_width="0dip"
+                android:layout_height="50sp"
+                android:layout_gravity="left"
+                android:layout_weight="10"
+                android:background="@drawable/button"
+                android:padding="5dip"
+                android:text="@string/intro_close"
+                android:textColor="@color/black" >
+</Button>
+        </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>

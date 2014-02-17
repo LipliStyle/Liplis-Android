@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="little.cute.WebClassDiagram" id="{UMLID=_7-vbAH9tEeGffqdUVmAgBQ,JavaID=little.cute.Web}" metadata="uml2-1.0" initialized="true" scrolledY="9" tag="10" key="3230303730363239204C69706C6973416E64726F6964">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0" name="LiplisHttpPost" location="52,50" size="126,101" timstampe="26" stereotype="" id="{UMLID=_Dgmp8H9uEeGffqdUVmAgBQ,JavaID=little.cute.Web/LiplisHttpPost}" runTimeClassModel="get(Ljava.lang.String;),postNOP(Ljava.lang.String;),post(Ljava.lang.String;LCollection;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="82,54">
+      <children xsi:type="editmodel:MethodEditModel" name="post" size="61,16" id="{UMLID=_DgricH9uEeGffqdUVmAgBQ,JavaID=little.cute.Web/LiplisHttpPost#post(Ljava.lang.String;LCollection;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="postNOP" size="82,16" id="{UMLID=_DgofIH9uEeGffqdUVmAgBQ,JavaID=little.cute.Web/LiplisHttpPost#postNOP(Ljava.lang.String;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="get" size="55,16" id="{UMLID=_DgqUVX9uEeGffqdUVmAgBQ,JavaID=little.cute.Web/LiplisHttpPost#get(Ljava.lang.String;)}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="ナチュラル" methodSorter="ナチュラル" innerClassSorter="ナチュラル" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="LiplisApi" location="50,201" size="131,137" timstampe="4245" stereotype="" id="{UMLID=_7-vbAX9tEeGffqdUVmAgBQ,JavaID=little.cute.Web/LiplisApi}" runTimeClassModel="liplisSendError(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),getShortNews(LCollection;),liplisStart(Ljava.lang.String;),getShortNews(Lorg.apache.http.message.BasicNameValuePair;),getShortNews(LCollection;I)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="110,90">
+      <children xsi:type="editmodel:MethodEditModel" name="getShortNews" size="110,16" id="{UMLID=_Dh31Qn9uEeGffqdUVmAgBQ,JavaID=little.cute.Web/LiplisApi#getShortNews(Lorg.apache.http.message.BasicNameValuePair;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getShortNews" size="110,16" id="{UMLID=_Dh2AEn9uEeGffqdUVmAgBQ,JavaID=little.cute.Web/LiplisApi#getShortNews(LCollection;I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="liplisStart" size="83,16" id="{UMLID=_Dh1ZAX9uEeGffqdUVmAgBQ,JavaID=little.cute.Web/LiplisApi#liplisStart(Ljava.lang.String;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="liplisSendError" size="109,16" id="{UMLID=_Dhzj0H9uEeGffqdUVmAgBQ,JavaID=little.cute.Web/LiplisApi#liplisSendError(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getShortNews" size="110,16" id="{UMLID=_Dh6RgX9uEeGffqdUVmAgBQ,JavaID=little.cute.Web/LiplisApi#getShortNews(LCollection;)}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" size="2,1" autoLocated="true" id="{UMLID=_DhxuoH9uEeGffqdUVmAgBQ}" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.0/@children.1" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="65,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="63,101"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="ナチュラル" methodSorter="ナチュラル" innerClassSorter="ナチュラル" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="14,14" gridOrigin="0,350" rulerUnit="cm" gridShow="true">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" attributeSorter="ナチュラル" methodSorter="ナチュラル" shortPackageNameFormat="true" showClassStereotype="true" showPackageStereotype="true" innerClassSorter="ナチュラル" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showInterfaceStereotype="true" showMethods="true" showAttributes="true" showLiterlas="true" showInnerEntity="true"/>
+</editmodel:ClassDiagramEditModel>

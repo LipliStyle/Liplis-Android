@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--================================================================-->
+<!-- xmlName		: lipliswidget.xml								-->
+<!-- 概要			: ウィジェット定義  							-->
+<!-- 																-->
+<!--  LiplisAndroidシステム     									-->
+<!--  Copyright(c) 2011-2011 sachin. All Rights Reserved. 			-->
+<!--================================================================-->
+<!-- 設定内容																-->
+<!-- xmlns:android 			: 既定の名前空間 								-->
+<!-- android:minWidth 		: ウィジェットの幅								-->
+<!-- android:minHeight 		: ウィジェットの高さ 							-->
+<!-- android:initialLayout  : レイアウトファイル 							-->
+<!-- android:configure		: コンフィグのアクティビティ					-->
+<!-- 起動時にコンフィグを起動する場合はいかの記述を属性の一番上に追加する	-->
+<!--    android:configure="little.cute.Activity.LiplisWidgetConfiguration" 	-->
+<!--================================================================-->
+<appwidget-provider 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:minHeight="146dp" android:initialLayout="@layout/widgetlarge" android:minWidth="294dp">
+</appwidget-provider>
