@@ -6,6 +6,8 @@
 //	impliments:
 //
 //  LiplisAndroidシステム
+//  2014/04/28 Liplis4.0 Clalis4.0対応
+//
 //  Copyright(c) 2011-2011 sachin. All Rights Reserved.
 //=======================================================================
 package little.cute.Web;

@@ -65,8 +65,10 @@ public class LiplisDefine {
     ///=============================
     /// ショートニュース定数
     public static final String API_SHORT_NEWS_TONE 		= "http://liplis.mine.nu/xml/Tone/LiplisLili.xml";										//トーンXMLL
-    public static final String API_SHORT_NEWS_URL_NEW 	= "http://liplis.mine.nu/Clalis/v32/Liplis/ClalisForLiplisWeb.aspx";					//ショートニュースAPI
-    public static final String API_SHORT_NEWS_URL_LSIT 	= "http://liplis.mine.nu/Clalis/v32/Liplis/ClalisForLiplisWebFx.aspx";					//ショートニュースリストAPI
+//    public static final String API_SHORT_NEWS_URL_NEW 	= "http://liplis.mine.nu/Clalis/v32/Liplis/ClalisForLiplisWeb.aspx";					//ショートニュースAPI
+//    public static final String API_SHORT_NEWS_URL_LSIT 	= "http://liplis.mine.nu/Clalis/v32/Liplis/ClalisForLiplisWebFx.aspx";					//ショートニュースリストAPI
+    public static final String API_SHORT_NEWS_URL_NEW 	= "http://liplis.mine.nu/Clalis/v40/Liplis/ClalisForLiplisWeb.aspx";					//ショートニュースAPI
+    public static final String API_SHORT_NEWS_URL_LSIT 	= "http://liplis.mine.nu/Clalis/v40/Liplis/ClalisForLiplisWebFx.aspx";					//ショートニュースリストAPI
     public static final String API_ONETIME_PASS		 	= "http://liplis.mine.nu/Clalis/v31/Liplis/ClalisForLiplisGetOnetimePass.aspx";			//ワンタイムパスワード要求API
     public static final String API_TWITTER_INFO_REGIST 	= "http://liplis.mine.nu/Clalis/v31/Liplis/ClalisForLiplisRegisterTwitterInfo.aspx";	//ツイッターユーザー登録API
     public static final String API_TWITTER_USER_ADD 		= "http://liplis.mine.nu/Clalis/v31/Liplis/ClalisForLiplisRegisterAddTwitterUser.aspx";	//ツイッターユーザー登録API
