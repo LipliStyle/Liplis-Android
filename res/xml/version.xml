@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--=======================================================================-->
+<!--  ClassName : version設定ファイル                                      -->
+<!--  概要      : このファイルにより、最新版チェックを行う。               -->
+<!--            : スキンのバージョンとLiplisの最低実行バージョンを記述する -->
+<!--                                                                       -->
+<!--  Liplis                                                               -->
+<!--  LIttle Pretty Lite Interface System                                  -->
+<!--  Copyright(c) 2014 LipliStyle. All Rights Reserved.                   -->
+<!--=======================================================================-->
+<version>
+    <skin>4.0.0</skin>
+    <min>4.0.0</min>
+    <url>http://liplis.mine.nu/Xml/Version/Lili/version.xml</url>
+    <apkUrl>http://liplis.mine.nu/Xml/Version/Lili/LiplisAndroid.apk</apkUrl>
+    <skinUrl>http://liplis.mine.nu/Xml/Version/Lili/Lili.zip</skinUrl>
+</version>
+
