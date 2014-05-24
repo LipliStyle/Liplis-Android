@@ -37,6 +37,9 @@
     <string name="configure_help_btn"> ヘルプ </string>
     <string name="configure_site_btn"> サイト </string>
 
+    <string name="control_version_chekc_title">バージョンチェック</string>
+    <string name="control_version_chekc">最新バージョンを確認する</string>
+
     <string name="control_market_title">リプリス Androidマーケット</string>
     <string name="configure_market_btn">AndroidMarket Liplis Liliを開く</string>
     <string name="configure_market_txt">もしよろしければ、評価をお願いいたします。</string>
@@ -270,6 +273,8 @@
 	<!--共通メニュー-->
 	<!--==============================================================================================-->
 	<string name="menu_setting_default">デフォルトに戻す</string>
+	<string name="menu_setting_yes">はい</string>
+	<string name="menu_setting_no">いいえ</string>
 
 
 	<!--==============================================================================================-->

@@ -12,16 +12,28 @@
 //=======================================================================
 package little.cute.Activity;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
 import little.cute.R;
 import little.cute.Common.LiplisDefine;
+import little.cute.Obj.ObjLiplisVersion;
 import little.cute.Widget.LiplisWidgetNormal;
+import little.cute.Xml.LiplisSkinVersion;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,6 +43,11 @@ import android.widget.Toast;
 import android.view.View.OnClickListener;
 
 public class LiplisWidgeSelecter extends Activity{
+
+	//UpdateFileUrl
+	String updateFileUrl = "";
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
     	//親クラスの
@@ -89,6 +106,9 @@ public class LiplisWidgeSelecter extends Activity{
 
 	    //ツイッター登録
 	    setSettingTwitterButton();
+
+        //バージョンの表示
+        setVersionUpButton();
     }
 
     /// <summary>
@@ -436,6 +456,78 @@ public class LiplisWidgeSelecter extends Activity{
 		});
     }
 
+
+
+    /// <summary>
+    /// 2014/05/20 ver4.0.1
+    /// setVersionUpButton
+    /// バージョンアップボタンのハンドラセット
+    /// </summary>
+    protected void setVersionUpButton()
+    {
+        //ボタンの配置
+        Button closeButton = (Button) findViewById(R.id.btnVersionUp);
+
+
+
+        //クリックリスナーの作成
+        closeButton.setOnClickListener(new OnClickListener() {
+		  	//クリックイベント
+			public void onClick(View v) {
+				//ここでバージョンアップチェック
+				LiplisSkinVersion lv = new LiplisSkinVersion();
+
+				ObjLiplisVersion nowOlv = lv.getVersion(getApplicationContext().getResources().getXml(R.xml.version));
+
+				ObjLiplisVersion newlv = lv.getNewVersion(nowOlv.url);
+
+				updateFileUrl = newlv.apkUrl;
+
+				if(!nowOlv.skinVersion.equals(newlv.skinVersion))
+				{
+					//最新バージョンが上がっていたら、ダウンロードするかどうかダイアログ起動
+					//Toast.makeText(getApplicationContext(), "新しいバージョンが公開されています。最新版をダウンロードしますか？", Toast.LENGTH_LONG).show();
+
+
+					doUpdate();
+
+				}
+				else
+				{
+					//最新バージョンなら、その旨メッセージ
+					 Toast.makeText(getApplicationContext(), "最新バージョンです。", Toast.LENGTH_LONG).show();
+
+				}
+		    }
+		});
+    }
+
+    private void doUpdate()
+    {
+		new AlertDialog.Builder(this)
+		//タイトルメッセージ
+		.setTitle("新しいバージョンが公開されています。最新版をダウンロードしますか？")
+		//OKハンドラ
+		.setPositiveButton(R.string.menu_setting_yes,
+		    new DialogInterface.OnClickListener() {
+		    public void onClick(DialogInterface dialog, int whichButton) {
+		    	Toast.makeText(getApplicationContext(), "ブラウザでダウンロードします。APKを実行し、更新して下さい。", Toast.LENGTH_LONG).show();
+		    	//APKをダウンロードする。
+		    	Intent intent=new Intent("android.intent.action.VIEW", Uri.parse(updateFileUrl));
+		        startActivity(intent);
+		    }
+		})
+		//キャンセルハンドラ
+		.setNegativeButton(R.string.menu_setting_no,
+		    new DialogInterface.OnClickListener() {
+		    public void onClick(DialogInterface dialog, int whichButton) {
+		        //キャンセルが押されたら、何もしない
+		    }
+		})
+		.show();
+    }
+
+
     /// <summary>
     /// setCloseButton
     /// クローズボタンのハンドらセット
@@ -486,5 +578,4 @@ public class LiplisWidgeSelecter extends Activity{
 		        e.printStackTrace();
 		}
     }
-
 }

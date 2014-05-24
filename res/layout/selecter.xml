@@ -331,7 +331,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/llBlackLine6"
+                android:id="@+id/llBlackLine7"
                 android:layout_width="fill_parent"
                 android:layout_height="2sp"
                 android:background="@color/black"
@@ -347,7 +347,7 @@
                 android:textColor="@color/black" />
 
             <LinearLayout
-                android:id="@+id/llSpase7"
+                android:id="@+id/llSpase10"
                 android:layout_width="fill_parent"
                 android:layout_height="5sp"
                 android:orientation="horizontal"
@@ -570,6 +570,71 @@
 
                 <LinearLayout
                     android:id="@+id/llControlSiteSp4"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout09"
+                android:layout_width="fill_parent"
+                android:layout_height="5sp"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBlackLine7"
+                android:layout_width="fill_parent"
+                android:layout_height="2sp"
+                android:background="@color/black"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtVersionTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/textBack"
+                android:text="@string/control_version_chekc_title"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/llSpase10"
+                android:layout_width="fill_parent"
+                android:layout_height="5sp"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout02"
+                android:layout_width="fill_parent"
+                android:layout_height="55sp" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout08"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnVersionUp"
+                    android:layout_width="0dip"
+                    android:layout_height="50sp"
+                    android:layout_weight="10"
+                    android:background="@drawable/button"
+                    android:drawableLeft="@drawable/sel_intro"
+                    android:padding="5dip"
+                    android:text="@string/control_version_chekc"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout10"
                     android:layout_width="5sp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

@@ -50,6 +50,7 @@
 //
 //
 //2014/04/28 ver4.0.0 Clalis4.0対応
+//2014/04/28 ver4.0.1 バージョンアップ機能
 //
 //  LiplisAndroidシステム
 //  Copyright(c) 2011-2013 sachin. All Rights Reserved.
@@ -76,11 +77,13 @@ import little.cute.Obj.ObjClock;
 import little.cute.Obj.ObjLiplisBody;
 import little.cute.Obj.ObjLiplisChat;
 import little.cute.Obj.ObjLiplisLogList;
+import little.cute.Obj.ObjLiplisVersion;
 import little.cute.Obj.ObjPreference;
 import little.cute.Obj.ObjR;
 import little.cute.Ser.SerialLiplisNews;
 import little.cute.Web.LiplisNews;
 import little.cute.Xml.LiplisChatSetting;
+import little.cute.Xml.LiplisSkinVersion;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -117,6 +120,7 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
 	protected static ObjBody ob;								//現在表示ボディオブジェクト
 	protected static ObjBattery obt;							//バッテリーオブジェクト
 	protected static ObjLiplisChat olc;						//チャットオブジェクト
+	protected static ObjLiplisVersion olv;					//バージョンオブジェクト ver4.0.1
 	protected static ObjPreference op;						//プリファレンスオブジェクト
 	protected static ObjLiplisLogList ol;						//ログオブジェクト
 	protected static ObjClock oc;								//時間オブジェクト
@@ -1230,6 +1234,11 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
             	LiplisChatSetting lc = new LiplisChatSetting();
 
         		olc = lc.getChatSetting(context.getResources().getXml(R.xml.chat));
+
+        		//バージョン定義の取得 ver4.0.1
+        		LiplisSkinVersion lv = new LiplisSkinVersion();
+
+        		olv = lv.getVersion(context.getResources().getXml(R.xml.version));
 
             	//チャット中フラグ
             	flgChatting = false;

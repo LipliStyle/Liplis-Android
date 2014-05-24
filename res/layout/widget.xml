@@ -151,7 +151,7 @@
         <LinearLayout android:layout_height="30sp" android:layout_width="45sp" android:layout_gravity="right" android:id="@+id/llLpsbattery">
 
             <LinearLayout
-                android:id="@+id/llSpase7"
+                android:id="@+id/llSpase10"
                 android:layout_width="15sp"
                 android:layout_height="30sp"
                 android:orientation="horizontal" >

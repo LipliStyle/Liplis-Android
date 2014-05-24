@@ -231,7 +231,7 @@
                 android:layout_height="20sp" >
 
                 <TextView
-                    android:id="@+id/TextView01"
+                    android:id="@+id/txtVersionTitle"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
