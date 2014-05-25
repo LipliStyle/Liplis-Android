@@ -51,14 +51,17 @@
 //
 //2014/04/28 ver4.0.0 Clalis4.0対応
 //2014/04/28 ver4.0.1 バージョンアップ機能
+//2014/05/22 ver4.0.2 時報機能
 //
 //  LiplisAndroidシステム
 //  Copyright(c) 2011-2013 sachin. All Rights Reserved.
 //=======================================================================
 package little.cute.Widget;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 import java.util.Random;
@@ -88,6 +91,7 @@ import little.cute.Xml.LiplisSkinVersion;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
+import android.annotation.SuppressLint;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
@@ -182,6 +186,10 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
     /// アイコン制御
     protected static int cntIconClose = 0;					//アイコン消去カウント
 	protected static int batteryNowId = 0;					//バッテリーID
+
+    ///=====================================
+    /// 時刻制御
+    protected static int prvHour = 0;						//前回時間
 
 	///=====================================
     /// エラー表示用
@@ -1337,6 +1345,9 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
     	//挨拶
     	//greet(context);
 
+    	//2014/05/22 ver4.0.2 時報機能追加
+    	prvHour = getHour();
+
     	//2013/05/02 ver3.4.1 お休み時自動復帰防止対応 standUpでグリーとさせる
     	//2013/06/28 ver3.4.2 再配置時にろーでぃんぐなうで止まる問題への対応(refleshOnlyメソッド追加)
     	if(op.getLpsStatus() == 0)
@@ -1973,16 +1984,22 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
 	    	//話題取得フェーズ終了まで0に設定
 	    	flgAlarm = 0;
 
-	    	//2013/10/05 ver3.5.0 話題が尽きた時の動作
-	    	if(runoutCheck(context))
-	    	{
-	    		reSetUpdateCount();
-	    		return;
-	    	}
-
 	    	//おしゃべり/ふつう/ひかえめ
 	    	if(op.getLpsMode() == 0 || op.getLpsMode() == 1 || op.getLpsMode() == 2)
 	    	{
+	    		//2014/05/22 ver4.0.2時報チェック
+	    		if(onTimeSignal(context))
+	    		{
+	    			return;
+	    		}
+
+		    	//2013/10/05 ver3.5.0 話題が尽きた時の動作
+		    	if(runoutCheck(context))
+		    	{
+		    		reSetUpdateCount();
+		    		return;
+		    	}
+
 	    		runLiplis(appWidgetManager, context);
 	    	}
 	    	//無口
@@ -2147,8 +2164,6 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
     	}
     }
 
-
-
     /// <summary>
     //  MethodType : child
     /// MethodName : getTopic
@@ -2160,10 +2175,6 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
     	{
         	flgThinking = true;
         	updateThinkingIcon(context);
-
-        	//時報チェック
-
-        	//バッテリー変化チェック
 
             getShortNews(context);
 
@@ -2178,6 +2189,7 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
     		updateThinkingIcon(context);
     	}
     }
+
 
     /// <summary>
     //  MethodType : child
@@ -2963,12 +2975,6 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
     			remoteView.setImageViewResource(or.imBattery10, R.drawable.ico_batterygage);
     		}
 
-
-
-
-
-
-
     		//--- 描画 --------------------
 	        //感情値とポイントをランダムで取得
     		Random rnd = new Random();
@@ -3090,6 +3096,56 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
     	}
     }
 
+
+    /// <summary>
+    /// 時報チェック
+    /// </summary>
+	protected boolean onTimeSignal(Context context)
+    {
+        try
+    	{
+        	boolean result = false;
+        	int nowHour = getHour();
+
+            //時報チェック
+            if (nowHour != prvHour)
+            {
+            	//座り中なら回避
+            	if(flgSitdown){return false;}
+
+                liplisNowTopic = this.olc.getTimeSignal(nowHour);
+
+            	//チャット情報の初期化
+            	initChatInfo();
+
+            	//おしゃべりスレッドスタート
+            	chatStart(context);
+
+            	result = true;
+            }
+
+            //前回時刻のセット
+            prvHour = getHour();
+
+            return result;
+    	}
+    	catch(Exception e)
+    	{
+    		return false;
+    	}
+    }
+
+    /// <summary>
+    /// 現在の時を取得する
+    /// </summary>
+    @SuppressLint("SimpleDateFormat")
+    protected int getHour()
+    {
+    	Date date = new Date();
+    	SimpleDateFormat sdfHour = new SimpleDateFormat("HH");
+
+    	return Integer.parseInt(sdfHour.format(date));
+    }
 
 
     ///====================================================================
