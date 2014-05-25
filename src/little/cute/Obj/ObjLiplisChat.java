@@ -342,4 +342,51 @@ public class ObjLiplisChat {
 		return new MsgShortNews(resStr, 1, 1);
 	}
 
+	/// <summary>
+    /// getTimeSignal
+    /// 時報を取得する
+    /// </summary>
+    public MsgShortNews getTimeSignal(int hour)
+    {
+        MsgShortNews result = new MsgShortNews();
+        MsgShortNews buf;
+
+        try
+        {
+            switch (hour)
+            {
+            case 1: buf = getChatWord("1Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 2: buf = getChatWord("2Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 3: buf = getChatWord("3Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 4: buf = getChatWord("4Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 5: buf = getChatWord("5Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 6: buf = getChatWord("6Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 7: buf = getChatWord("7Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 8: buf = getChatWord("8Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 9: buf = getChatWord("9Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 10: buf = getChatWord("10Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 11: buf = getChatWord("11Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 12: buf = getChatWord("12Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 13: buf = getChatWord("13Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 14: buf = getChatWord("14Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 15: buf = getChatWord("15Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 16: buf = getChatWord("16Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 17: buf = getChatWord("17Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 18: buf = getChatWord("18Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 19: buf = getChatWord("19Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 20: buf = getChatWord("20Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 21: buf = getChatWord("21Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 22: buf = getChatWord("22Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 23: buf = getChatWord("23Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+            case 0: buf = getChatWord("24Oclock"); return new MsgShortNews(buf.nameList.get(0).replace("@", ""), buf.emotionList.get(0), buf.pointList.get(0));
+
+                default:
+                    return result;
+            }
+        }
+        catch (Exception ex)
+        {
+            return new MsgShortNews("[?]%", 1, 1);
+        }
+    }
 }
