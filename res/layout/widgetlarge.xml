@@ -73,10 +73,35 @@
             <ImageView android:src="@drawable/ico_batterygage" android:id="@+id/imBattery10Lar" android:layout_width="13sp" android:layout_height="13sp"></ImageView>
         </LinearLayout>
     </LinearLayout>
-    <LinearLayout android:id="@+id/llTalkTextLar" android:layout_height="96dp" android:layout_width="160dp">
-        <TextView android:text="ローディングなう♪" android:layout_gravity="top|left" android:textColor="@color/black" android:layout_marginBottom="2dp" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_marginTop="2dp" android:id="@+id/liplisTalkTextLar" android:layout_height="90dp" android:layout_width="156dp" android:textSize="12sp"></TextView>
+
+    <LinearLayout
+        android:id="@+id/llTalkTextLar"
+        android:layout_width="160dp"
+        android:layout_height="96dp" >
+
+        <TextView
+            android:id="@+id/liplisTalkTextLar"
+            android:layout_width="156dp"
+            android:layout_height="90dp"
+            android:layout_gravity="top|left"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="11"
+            android:text="ローディングなう♪"
+            android:textColor="@color/black"
+            android:textSize="12sp" >
+        </TextView>
     </LinearLayout>
-    <ImageView android:scaleType="fitEnd" android:layout_gravity="bottom|right" android:layout_height="fill_parent" android:layout_width="wrap_content" android:id="@+id/liplisImageLar"></ImageView>
+
+    <ImageView
+        android:id="@+id/liplisImageLar"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_gravity="bottom|right"
+        android:scaleType="fitEnd" >
+</ImageView>
     <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|left" android:orientation="vertical" android:id="@+id/llLeftIconLar">
         <LinearLayout android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/llLeft1Lar">
             <LinearLayout android:id="@+id/llLpsSleepLar" android:layout_width="50sp" android:layout_height="50sp">

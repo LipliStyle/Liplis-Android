@@ -52,8 +52,8 @@
 		<emotion>3</emotion>
 		<prerequisite>0:00,4:00</prerequisite>
 	</chatDiscription>
-
-
+	
+	
 	<!-- ========================================================= -->
 	<!--                        終了挨拶                          -->
 	<!-- ========================================================= -->
@@ -78,7 +78,7 @@
 		<emotion>1</emotion>
 		<prerequisite>0:00,23:59</prerequisite>
 	</chatDiscription>
-
+	
 	<!-- ========================================================= -->
 	<!--                        交代挨拶                          -->
 	<!-- ========================================================= -->
@@ -103,8 +103,8 @@
 		<emotion>1</emotion>
 		<prerequisite>0:00,23:59</prerequisite>
 	</chatDiscription>
-
-
+	
+	
 	  <!-- ========================================================= -->
 	  <!--                      エラー関連                         -->
 	  <!-- ========================================================= -->
@@ -122,8 +122,8 @@
 		<emotion>-1</emotion>
 		<prerequisite />
 	</chatDiscription>
-
-
+	
+	
 	  <!-- ========================================================= -->
 	  <!--                      バッテリー関連                         -->
 	  <!-- ========================================================= -->
@@ -190,91 +190,98 @@
 	  <chatDiscription>
 	    <name>1Oclock1</name>
 	    <type>1Oclock</type>
-	    <discription>1時です。@そろそろお休みした方がよろしいのではないでしょうか？</discription>
+	    <discription>1時です。夜も遅いので、お休みした方がよろしいのではないでしょうか？</discription>
 	    <emotion>-3</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>2Oclock1</name>
 	    <type>2Oclock</type>
-	    <discription>2時です。@眠くなってきてしまいました・・・。</discription>
+	    <discription>2時です。眠くなってきてしまいました・・・。</discription>
 	    <emotion>-3</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>3Oclock1</name>
 	    <type>3Oclock</type>
-	    <discription>3時です。@真夜中までおつかれさまです。ご主人様。</discription>
+	    <discription>3時です。真夜中までおつかれさまです。ご主人様。</discription>
 	    <emotion>3</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>4Oclock1</name>
 	    <type>4Oclock</type>
-	    <discription>4時です。@そろそろ起きる時間ですね。メイドさんの朝は速いのです♪</discription>
+	    <discription>4時です。そろそろ起きる時間ですね。メイドさんの朝は早いのです♪</discription>
 	    <emotion>2</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>5Oclock1</name>
 	    <type>5Oclock</type>
-	    <discription>5時です。@さて、朝ごはんの支度を始めませんと。</discription>
+	    <discription>5時です。さて、朝ごはんの支度を始めませんと。</discription>
 	    <emotion>2</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>6clock1</name>
 	    <type>6Oclock</type>
-	    <discription>6時です。@おはようございます。ご主人様。</discription>
+	    <discription>6時です。おはようございます。ご主人様。</discription>
 	    <emotion>2</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>6clock2</name>
 	    <type>6Oclock</type>
-	    <discription>6時です。@おはようございます。ご主人様。@もう朝ですよ、起きて下さい！</discription>
+	    <discription>6時です。おはようございます。ご主人様。もう朝ですよ、起きて下さい！</discription>
 	    <emotion>6</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>7clock1</name>
 	    <type>7Oclock</type>
-	    <discription>7時です。@おはようございます。ご主人様。</discription>
-	    <emotion>2</emotion>
+	    <discription>7時です。おはようございます。ご主人様。朝ごはんができていますよ。今日はフレンチトーストを作りましたよ。</discription>
+	    <emotion>1</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>7clock2</name>
 	    <type>7Oclock</type>
-	    <discription>7時です。@おはようございます。ご主人様。@もう朝ですよ、起きて下さい！</discription>
-	    <emotion>6</emotion>
+	    <discription>7時です。おはようございます。ご主人様。朝ごはんができていますよ。今日は和食です♪</discription>
+	    <emotion>1</emotion>
+	    <prerequisite></prerequisite>
+	  </chatDiscription>
+	  <chatDiscription>
+	    <name>7clock3</name>
+	    <type>7Oclock</type>
+	    <discription>7時です！申し訳ありません！寝坊してしまいました！</discription>
+	    <emotion>-9</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>8clock1</name>
 	    <type>8Oclock</type>
-	    <discription>8時です。@そろそろおでかけの時間ですね。</discription>
+	    <discription>8時です。そろそろおでかけの時間ですね。</discription>
 	    <emotion>1</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>9clock1</name>
 	    <type>9Oclock</type>
-	    <discription>9時です。@新しい１日が始まりましたね。今日もがんばりましょう。</discription>
+	    <discription>9時です。新しい１日が始まりましたね。今日もがんばりましょう。</discription>
 	    <emotion>1</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>10clock1</name>
 	    <type>10Oclock</type>
-	    <discription>10時です。@おしゃべりにお掃除にお洗濯、今日も忙しいですっ！</discription>
+	    <discription>10時です。おしゃべりにお掃除にお洗濯、今日も忙しいですっ！</discription>
 	    <emotion>1</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>11clock1</name>
 	    <type>11Oclock</type>
-	    <discription>11時です。@お昼までもう一息です！</discription>
+	    <discription>11時です。お昼までもう一息です！</discription>
 	    <emotion>1</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
@@ -295,81 +302,81 @@
 	  <chatDiscription>
 	    <name>14clock1</name>
 	    <type>14Oclock</type>
-	    <discription>14時です。@おしゃべりにお掃除にお洗濯、今日も忙しいですっ！</discription>
+	    <discription>14時です。おしゃべりにお掃除にお洗濯、今日も忙しいですっ！</discription>
 	    <emotion>1</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>15clock1</name>
 	    <type>15Oclock</type>
-	    <discription>15時です。@一休みにして、紅茶とおやつを頂きましょう♪</discription>
+	    <discription>15時です。一休みにして、紅茶とおやつを頂きましょう♪</discription>
 	    <emotion>1</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>16clock1</name>
 	    <type>16Oclock</type>
-	    <discription>16時です。@そろそろお夕飯のおつかいに出かけましょう♪</discription>
+	    <discription>16時です。そろそろお夕飯のおつかいに出かけましょう♪</discription>
 	    <emotion>1</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>17clock1</name>
 	    <type>17Oclock</type>
-	    <discription>17時です。@お腹空いてきましたか？これからお夕飯の準備をしますね。</discription>
+	    <discription>17時です。お腹空いてきましたか？これからお夕飯の準備をしますね。</discription>
 	    <emotion>1</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>18clock1</name>
 	    <type>18Oclock</type>
-	    <discription>18時です。@夕ごはんの準備ができています♪</discription>
+	    <discription>18時です。夕ごはんの準備ができています♪</discription>
 	    <emotion>1</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>19clock1</name>
 	    <type>19Oclock</type>
-	    <discription>19時です。@</discription>
+	    <discription>19時です。ご飯も終わりましたので、そろそろお風呂はいかがですか？</discription>
 	    <emotion>1</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>20clock1</name>
 	    <type>20Oclock</type>
-	    <discription>20時です。@</discription>
+	    <discription>20時です。今日も1日お疲れ様でした。今日も色々なおしゃべりをしちゃいました。</discription>
 	    <emotion>1</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>21clock1</name>
 	    <type>21Oclock</type>
-	    <discription>21時です。@</discription>
+	    <discription>21時です。まだお仕事ですか？私にお手伝いできることは無いでしょうか？</discription>
 	    <emotion>1</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>22clock1</name>
 	    <type>22Oclock</type>
-	    <discription>22時です。@</discription>
+	    <discription>22時です。もう1日も終わりですね。ご主人様とおしゃべりしていると、あっという間です♪</discription>
 	    <emotion>1</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>23clock1</name>
 	    <type>23Oclock</type>
-	    <discription>23時です。@</discription>
+	    <discription>23時です。</discription>
 	    <emotion>1</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
 	    <name>24clock1</name>
 	    <type>24Oclock</type>
-	    <discription>0時です。@</discription>
+	    <discription>0時です。そろそろ眠くなってきてしまいました。ご主人様もそろそろお休みになってはいかがでしょうか？</discription>
 	    <emotion>1</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
-
+	  
 	  <!-- ========================================================= -->
 	  <!--                          タッチ関連                       -->
 	  <!-- ========================================================= -->
@@ -381,24 +388,31 @@
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
-	    <name>facetouch</name>
+	    <name>pitouch2</name>
+	    <type>touch</type>
+	    <discription>どこ触ってるのですか！</discription>
+	    <emotion>6</emotion>
+	    <prerequisite></prerequisite>
+	  </chatDiscription>
+	  <chatDiscription>
+	    <name>pitouch</name>
+	    <type>touch</type>
+	    <discription>ご主人様・・・？</discription>
+	    <emotion>-3</emotion>
+	    <prerequisite></prerequisite>
+	  </chatDiscription>
+	  <chatDiscription>
+	    <name>facetouch1</name>
 	    <type>touch</type>
 	    <discription>なんでしょうか？御用ですか？</discription>
 	    <emotion>1</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 	  <chatDiscription>
-	    <name>facetouchDb</name>
+	    <name>facetouch1</name>
 	    <type>touch</type>
-	    <discription>つっつかないでください！</discription>
-	    <emotion>6</emotion>
-	    <prerequisite></prerequisite>
-	  </chatDiscription>
-	  <chatDiscription>
-	    <name>facetouchDb</name>
-	    <type>touch</type>
-	    <discription>痛いです！</discription>
-	    <emotion>-1</emotion>
+	    <discription>ご主人様、どうかされましたか？</discription>
+	    <emotion>1</emotion>
 	    <prerequisite></prerequisite>
 	  </chatDiscription>
 </chat>

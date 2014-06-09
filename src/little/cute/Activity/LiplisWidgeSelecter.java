@@ -12,13 +12,6 @@
 //=======================================================================
 package little.cute.Activity;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-
 import little.cute.R;
 import little.cute.Common.LiplisDefine;
 import little.cute.Obj.ObjLiplisVersion;
@@ -33,14 +26,13 @@ import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.view.View.OnClickListener;
 
 public class LiplisWidgeSelecter extends Activity{
 
@@ -479,25 +471,54 @@ public class LiplisWidgeSelecter extends Activity{
 
 				ObjLiplisVersion nowOlv = lv.getVersion(getApplicationContext().getResources().getXml(R.xml.version));
 
-				ObjLiplisVersion newlv = lv.getNewVersion(nowOlv.url);
-
-				updateFileUrl = newlv.apkUrl;
-
-				if(!nowOlv.skinVersion.equals(newlv.skinVersion))
+				try
 				{
-					//最新バージョンが上がっていたら、ダウンロードするかどうかダイアログ起動
-					//Toast.makeText(getApplicationContext(), "新しいバージョンが公開されています。最新版をダウンロードしますか？", Toast.LENGTH_LONG).show();
+					ObjLiplisVersion newlv = lv.getNewVersion(nowOlv.url);
 
+					updateFileUrl = newlv.apkUrl;
 
-					doUpdate();
+					if(!nowOlv.skinVersion.equals(newlv.skinVersion))
+					{
+						//最新バージョンが上がっていたら、ダウンロードするかどうかダイアログ起動
+						//Toast.makeText(getApplicationContext(), "新しいバージョンが公開されています。最新版をダウンロードしますか？", Toast.LENGTH_LONG).show();
+						doUpdate();
 
+//						 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getApplicationContext());
+//					        alertDialogBuilder.setTitle("バージョンアップ確認");
+//					        alertDialogBuilder.setMessage("新しいバージョンが公開されています。最新版をダウンロードしますか？");
+//					        alertDialogBuilder.setPositiveButton("はい",
+//					                new DialogInterface.OnClickListener() {
+//					                    @Override
+//					                    public void onClick(DialogInterface dialog, int which) {
+//					                    	doUpdate();
+//					                    }
+//					                });
+//					        // アラートダイアログの否定ボタンがクリックされた時に呼び出されるコールバックリスナーを登録します
+//					        alertDialogBuilder.setNegativeButton("いいえ",
+//					                new DialogInterface.OnClickListener() {
+//					                    @Override
+//					                    public void onClick(DialogInterface dialog, int which) {
+//					                    }
+//					                });
+//					        // アラートダイアログのキャンセルが可能かどうかを設定します
+//					        alertDialogBuilder.setCancelable(true);
+//					        AlertDialog alertDialog = alertDialogBuilder.create();
+//					        // アラートダイアログを表示します
+//					        alertDialog.show();
+
+					}
+					else
+					{
+						//最新バージョンなら、その旨メッセージ
+						 Toast.makeText(getApplicationContext(), "最新バージョンです。", Toast.LENGTH_LONG).show();
+
+					}
 				}
-				else
+				catch(Exception ex)
 				{
-					//最新バージョンなら、その旨メッセージ
-					 Toast.makeText(getApplicationContext(), "最新バージョンです。", Toast.LENGTH_LONG).show();
-
+					Toast.makeText(getApplicationContext(), "公開されているバージョンがありません。。", Toast.LENGTH_LONG).show();
 				}
+
 		    }
 		});
     }
