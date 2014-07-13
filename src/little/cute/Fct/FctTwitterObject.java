@@ -51,7 +51,7 @@ public class FctTwitterObject {
     	}
     	catch(Exception e)
     	{
-
+    		System.out.println(e);
     	}
     }
 

@@ -14,7 +14,7 @@ public class AsyncTwitterGetTwitterObject extends AsyncTask<String, Integer, Lon
 	Twitter twitter;
 	RequestToken requestToken;
 	ObjLpsBean bean;
-;
+
 	///=====================================
     /// 結果リスト
 	boolean res;

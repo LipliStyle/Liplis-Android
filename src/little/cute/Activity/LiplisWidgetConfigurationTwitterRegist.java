@@ -24,6 +24,7 @@ import little.cute.Obj.ObjLpsBean;
 import little.cute.Tsk.AsyncTwitterGetTwitterObject;
 import little.cute.Tsk.AsyncTwitterInputPinCode;
 import twitter4j.Twitter;
+import twitter4j.TwitterException;
 import twitter4j.auth.AccessToken;
 import twitter4j.auth.RequestToken;
 import android.app.Activity;
@@ -162,7 +163,6 @@ public class LiplisWidgetConfigurationTwitterRegist  extends Activity {
     public void onDestroy()
 	{
     	super.onDestroy();
-		 twitter.shutdown();
 		 twitter = null;
 		 requestToken = null;
 		 accessToken = null;
@@ -263,6 +263,8 @@ public class LiplisWidgetConfigurationTwitterRegist  extends Activity {
     protected void inputPinCodeAsync(String pin)
     {
     	if(pin.length() > 0){
+
+
 			//☆非同期処理化 ピンコード入力をする
 			AsyncTwitterInputPinCode thread = new AsyncTwitterInputPinCode(this,this.twitter, this.requestToken,getUserCd(),pin);
 			thread.execute();
@@ -284,6 +286,15 @@ public class LiplisWidgetConfigurationTwitterRegist  extends Activity {
 			this.accessToken = accessToken;
 			setPriference();
 			viewResult("正常に登録できました。一度、話題設定画面を起動し直すと、ユーザーリスト登録画面が開けます。");
+
+
+//			try {
+//				this.accessToken = twitter.getOAuthAccessToken(this.requestToken, "oauth_verifier");
+//				setPriference();
+//				viewResult("正常に登録できました。一度、話題設定画面を起動し直すと、ユーザーリスト登録画面が開けます。");
+//			} catch (TwitterException e) {
+//				viewResult("ツイッター認証に失敗しました。正しいコードを入力してください。");
+//			}
 		}
 		else
 		{
