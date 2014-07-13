@@ -52,6 +52,7 @@
 //2014/04/28 ver4.0.0 Clalis4.0対応
 //2014/04/28 ver4.0.1 バージョンアップ機能
 //2014/05/22 ver4.0.2 時報機能
+//2014/07/13 ver4.0.3 ツイッター登録のバグ修正
 //
 //  LiplisAndroidシステム
 //  Copyright(c) 2011-2013 sachin. All Rights Reserved.
