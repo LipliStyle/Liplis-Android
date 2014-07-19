@@ -11,16 +11,16 @@
     <property name="target" value="1.6"/>
     <property name="source" value="1.6"/>
     <path id="Android 1.6.libraryclasspath">
-        <pathelement location="C:/AndroidSDK/platforms/android-4/android.jar"/>
+        <pathelement location="C:/AndroidSDK/sdk/platforms/android-4/android.jar"/>
     </path>
     <path id="Android Private Libraries.libraryclasspath">
         <pathelement location="libs/gson-2.2.2-javadoc.jar"/>
         <pathelement location="libs/gson-2.2.2.jar"/>
+        <pathelement location="libs/twitter4j-core-4.0.2.jar"/>
         <pathelement location="libs/gson-2.2.2-sources.jar"/>
-        <pathelement location="libs/twitter4j-core-3.0.3.jar"/>
     </path>
     <path id="Android Dependencies.libraryclasspath">
-        <pathelement location="C:/AndroidSDK/tools/support/annotations.jar"/>
+        <pathelement location="C:/AndroidSDK/sdk/tools/support/annotations.jar"/>
     </path>
     <path id="LiplisAndroid.classpath">
         <pathelement location="bin/classes"/>
@@ -29,8 +29,8 @@
         <pathelement location="libs/gson-2.2.2-javadoc.jar"/>
         <pathelement location="libs/gson-2.2.2-sources.jar"/>
         <pathelement location="libs/gson-2.2.2.jar"/>
-        <pathelement location="libs/twitter4j-core-3.0.3.jar"/>
         <path refid="Android Dependencies.libraryclasspath"/>
+        <pathelement location="libs/twitter4j-core-4.0.2.jar"/>
     </path>
     <target name="init">
         <mkdir dir="bin/classes"/>
