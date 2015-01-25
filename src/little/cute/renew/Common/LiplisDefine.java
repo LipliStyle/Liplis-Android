@@ -21,6 +21,7 @@ public class LiplisDefine {
     public static final String LIPLIS_CLICK_ACTION_SETTING = "LIPLIS_CLICK_ACTION_SETTING";
     public static final String LIPLIS_CLICK_ACTION_BATTERY = "LIPLIS_CLICK_ACTION_BATTERY";
     public static final String LIPLIS_CLICK_ACTION_CLOCK = "LIPLIS_CLICK_ACTION_CLOCK";
+    public static final String LIPLIS_CLICK_ACTION_CHAT_TALK = "LIPLIS_CLICK_ACTION_CHAT_TALK";		//ver4.5 2015/01/11
     //public static final String LIPLIS_UPDATE_ALARM = "LIPLIS_UPDATE_ALARM";
 
     public static final String LIPLIS_SETTING_START = "LIPLIS_SETTING_START";
@@ -58,7 +59,7 @@ public class LiplisDefine {
     /// サイト
     public static final String SITE_MAIN 	= "http://liplis.mine.nu";																		//メイン
     public static final String SITE_HELP 	= "http://liplis.mine.nu/lipliswiki/webroot/?LiplisAndroid%20Manual";							//ヘルプ
-    public static final String SITE_MARKET 	= "https://play.google.com/store/apps/details?id=little.cute";								//マーケット
+    public static final String SITE_MARKET 	= "https://play.google.com/store/apps/details?id=little.cute.renew";						//マーケット
     public static final String SITE_MARKET_SMALL 	= "https://play.google.com/store/apps/details?id=little.cute.Smallapp";					//マーケット
     //public static final String SITE_MARKET 	= "https://market.android.com/details?id=little.cute";										//マーケット(旧)
 
@@ -83,6 +84,7 @@ public class LiplisDefine {
     public static final String API_TOPIC_SETTING 	        = "http://liplis.mine.nu/Clalis/v32/Liplis/ClalisForLiplisSettingTopicSetting.aspx";	//話題設定
     public static final String API_SHORT_NEWS_IN_URL 		= "http://liplis.mine.nu/clalis/v30/liplis/clalis.asmx/clalisShortNewsIn";				//ショートニュースインターナショナルAPI
     public static final String API_LIPLIS_ERROR 			= "http://liplis.mine.nu/Clalis/v20/Api.asmx/sendErr";									//エラー送信
+    public static final String API_LIPLIS_CHAT 			= "http://liplis.mine.nu/Clalis/v40/Liplis/ClalisForLiplisTalk.aspx";					//おしゃべり応答
 
     ///=============================
     /// ツイッターキー
@@ -105,6 +107,10 @@ public class LiplisDefine {
     ///=============================
     /// せりふ定義
     public static final String SAY_ZZZ = "Zzz";
+
+    ///=============================
+    /// チャット送信コード
+    public static final String CHAT_TALK_SENDMESSAGE = "CHAT_TALK_SENDMESSAGE";
 
     ///=============================
     /// プリファレンス定義名

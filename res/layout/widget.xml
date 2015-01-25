@@ -122,7 +122,14 @@
                 android:layout_height="30sp"
                 android:orientation="horizontal" >
 </LinearLayout>
-            <ImageView android:layout_width="30sp" android:src="@drawable/ico_thinking_not" android:layout_height="30sp" android:id="@+id/liplisThinking" android:layout_gravity="bottom|right"></ImageView>
+
+            <ImageView
+                android:id="@+id/liplisThinking"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_gravity="bottom|right"
+                android:src="@drawable/ico_intro" >
+</ImageView>
         </LinearLayout>
 
         <LinearLayout

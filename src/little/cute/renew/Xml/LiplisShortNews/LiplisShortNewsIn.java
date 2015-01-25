@@ -28,7 +28,7 @@ public class LiplisShortNewsIn extends XmlReadListPullParser implements LiplisSh
     /// ショートニュースの取得
 	/// 日本語以外の言語の場合はこのクラスを使用する
     /// </summary>
-	public MsgShortNews getShortNews(InputStream is)
+	public MsgShortNews getChatTalkResponse(InputStream is)
 	{
 		return loadXml(getXmlFromSt(is));
 	}

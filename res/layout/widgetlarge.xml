@@ -98,7 +98,7 @@
     <ImageView
         android:id="@+id/liplisImageLar"
         android:layout_width="180dp"
-        android:layout_height="215dp"
+        android:layout_height="200dp"
         android:layout_gravity="bottom|right"
         android:scaleType="fitEnd" >
 </ImageView>
@@ -149,7 +149,14 @@
                     android:layout_height="46sp"
                     android:orientation="horizontal" >
 </LinearLayout>
-                <ImageView android:src="@drawable/ico_thinking_not" android:layout_gravity="center_vertical" android:id="@+id/liplisThinkingLar" android:layout_width="45sp" android:layout_height="45sp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/liplisThinkingLar"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ico_intro" >
+</ImageView>
             </LinearLayout>
             <LinearLayout android:id="@+id/llLpsAngClockLar" android:layout_width="50sp" android:layout_height="50sp">
 

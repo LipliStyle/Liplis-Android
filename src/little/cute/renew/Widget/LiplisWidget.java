@@ -55,9 +55,11 @@
 //2014/07/13 ver4.0.3 ツイッター登録のバグ修正
 //
 //2014/07/13 ver4.2.0 ニュートラル状態戻し追加
+//2015/01/11 ver4.5.0 話しかけ応答機能追加
+//                    考え中アイコン廃止 (updateThinkingIconメソッド廃止)
 //
 //  LiplisAndroidシステム
-//  Copyright(c) 2011-2013 sachin. All Rights Reserved.
+//  Copyright(c) 2011-2015 sachin. All Rights Reserved.
 //=======================================================================
 package little.cute.renew.Widget;
 
@@ -71,6 +73,7 @@ import java.util.Random;
 
 import little.cute.renew.R;
 import little.cute.renew.Activity.LiplisWidgeSelecter;
+import little.cute.renew.Activity.LiplisWidgetChat;
 import little.cute.renew.Activity.LiplisWidgetConfiguration;
 import little.cute.renew.Activity.LiplisWidgetLog;
 import little.cute.renew.Common.LiplisDefine;
@@ -79,6 +82,7 @@ import little.cute.renew.Fct.FctLiplisMsg;
 import little.cute.renew.Msg.MsgShortNews;
 import little.cute.renew.Obj.ObjBattery;
 import little.cute.renew.Obj.ObjBody;
+import little.cute.renew.Obj.ObjChatTalkStatic;
 import little.cute.renew.Obj.ObjClock;
 import little.cute.renew.Obj.ObjLiplisBody;
 import little.cute.renew.Obj.ObjLiplisChat;
@@ -87,6 +91,7 @@ import little.cute.renew.Obj.ObjLiplisVersion;
 import little.cute.renew.Obj.ObjPreference;
 import little.cute.renew.Obj.ObjR;
 import little.cute.renew.Ser.SerialLiplisNews;
+import little.cute.renew.Web.LiplisApiChat;
 import little.cute.renew.Web.LiplisNews;
 import little.cute.renew.Xml.LiplisChatSetting;
 import little.cute.renew.Xml.LiplisSkinVersion;
@@ -104,6 +109,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Configuration;
 import android.net.Uri;
+import android.os.Bundle;
 import android.os.SystemClock;
 import android.speech.tts.TextToSpeech;
 import android.telephony.PhoneStateListener;
@@ -111,6 +117,7 @@ import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.RemoteViews;
+import android.widget.Toast;
 
 public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnInitListener{
 
@@ -122,6 +129,7 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
     /// クラス
 	//protected static LiplisApi lpsApi;						//リプリスAPI
 	protected static LiplisNews lpsNews;						//リプリスニュース
+	protected static LiplisApiChat lpsChat; 					//リプリスチャット
 	protected static ObjR or;									//アールオブジェクト
 	protected static ObjLiplisBody olb;						//リプリスボディオブジェクト
 	protected static ObjBody ob;								//現在表示ボディオブジェクト
@@ -156,6 +164,7 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
 	protected static boolean flgThinking     	= false;	//考え中
 	protected static boolean flgClockMode 		= false;	//クロックモード
 	protected static boolean flgChatting 		= false;	//チャット中
+	protected static boolean flgChatTalk        = false;    //チャットトーク中 2015/01/09 チャットトーク中フラグ追加
 	protected static boolean flgSkip 			= false;	//スキップ中
 	protected static boolean flgSitdown 			= false;	//おやすみステータス
 	protected static boolean flgAutoSleepOn 		= false;	//自動スリープがONになったときON
@@ -377,6 +386,11 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
             else if(LiplisDefine.LIPLIS_CLICK_ACTION_CLOCK.equals(action))
             {
             	onClickClock(context);
+            }
+            //話しかけリスナー
+            else if(LiplisDefine.LIPLIS_CLICK_ACTION_CHAT_TALK.equals(action))
+            {
+            	onChatTalkReceive(context);
             }
             //設定クリックリスナー
             else if(LiplisDefine.LIPLIS_SETTING_START.equals(action))
@@ -673,7 +687,35 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
     	}
     }
 
-  /// <summary>
+    /// <summary>
+    //  MethodType : base
+    /// MethodName : onChatTalkClock
+    /// 時計アイコンクリック
+    /// 2015/01/11 var4.5.0
+    /// </summary>
+    protected void onChatTalkReceive(Context context)
+    {
+        try
+    	{
+        	//グローバルサインんスタンス取得
+        	ObjChatTalkStatic octs = ObjChatTalkStatic.getInstance();
+
+        	//グローバルからメッセージを取得しておく
+        	String receiveMessage = octs.getSendText();
+
+        	//話しかけAPI呼び出し
+        	chatTalkSend(context,receiveMessage);
+
+        	//グローバル領域をクリアしておく
+        	octs.setSendText("");
+
+    	}
+    	catch(Exception e)
+    	{
+    	}
+    }
+
+    /// <summary>
     //  MethodType : base
     /// MethodName : onSettingStart
     /// 設定開始
@@ -1134,6 +1176,11 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
         	PendingIntent piIconClock = PendingIntent.getBroadcast(context, appWidgetId, intentIconClock, 0);
         	remoteView.setOnClickPendingIntent(or.llLpsAngClock, piIconClock);
 
+        	//チャットのクリックリスナー定義
+        	Intent intentChat = new Intent(context, LiplisWidgetChat.class);
+        	PendingIntent pdChat = PendingIntent.getActivity(context, 0, intentChat, 0);
+        	remoteView.setOnClickPendingIntent(or.llLpsChat, pdChat);
+
         	return true;
         }
         catch(Exception e)
@@ -1227,6 +1274,9 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
     			//2013/03/01 ver3.1.0 LiplisNewsの初期化
     			lpsNews = SerialLiplisNews.loadObject(context);
 
+    			//2015/01/11 ver4.5 リプリスチャットAPI追加
+    			lpsChat = new LiplisApiChat();
+
             	//プリファレンスオブジェクト
             	op = new ObjPreference(context);
 
@@ -1268,6 +1318,9 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
             	createIntentFilter(Intent.ACTION_SCREEN_ON, context);
             	createIntentFilter(Intent.ACTION_SCREEN_OFF, context);
             	createIntentFilter(Intent.ACTION_CONFIGURATION_CHANGED, context);
+
+            	//1件のデータをロードする
+    			lpsNews.setOneNews(context, getNameValuePairForLiplisNews());
 
             	flgInit = true;
     		}
@@ -1381,7 +1434,15 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
 	{
         try
     	{
-    		cntUpdate = liplisInterval;
+        	if(!flgChatTalk)
+        	{
+        		cntUpdate = liplisInterval;
+        	}
+        	else
+        	{
+        		cntUpdate = 60;
+        	}
+
         	flgAlarm = 10;
     	}
     	catch(Exception e)
@@ -1754,6 +1815,12 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
         	{
         		liplisNowTopic = FctLiplisMsg.createMsgMassageDlFaild();
         	}
+
+        	if(lpsNews.newsQueue.size() == 0)
+        	{
+        		//1件のデータをロードする
+    			lpsNews.setOneNews(context, getNameValuePairForLiplisNews());
+        	}
     	}
     	catch(Exception e)
     	{
@@ -1801,6 +1868,28 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
 
     /// <summary>
     //  MethodType : child
+    /// MethodName : getChatTalkResponse
+    /// チャットトークを取得する
+    /// 2015/01/11 ver4.5.0 おしゃべり対応
+    /// </summary>
+    protected void getChatTalkResponse(Context context, String sentence){
+        try
+    	{
+        	liplisNowTopic = lpsChat.apiPost(op.getLpsUid(), LiplisDefine.API_SHORT_NEWS_TONE, "A" + LiplisUtil.getVersionName(context), sentence);
+
+        	if(liplisNowTopic == null || liplisNowTopic.nameList.size() == 0)
+        	{
+        		liplisNowTopic = FctLiplisMsg.createMsgMassageDlFaild();
+        	}
+    	}
+    	catch(Exception e)
+    	{
+    		Log.d("error",e.toString());
+    	}
+    }
+
+    /// <summary>
+    //  MethodType : child
     /// MethodName : getShortNewsText
     /// ニュースのテキストを取得する
     /// 2013/05/01 ver3.4.0 おしゃべり対応
@@ -1826,6 +1915,8 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
     		return "";
     	}
     }
+
+
 
     ///====================================================================
     ///
@@ -1912,36 +2003,38 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
     //  MethodType : child
     /// MethodName : updateSleepIcon
     /// 考え中アイコンの更新
+    ///
+    /// ver4.5 2015/01/11 考え中アイコンを廃止。変化処理を廃止する。
     /// </summary>
-    protected boolean updateThinkingIcon(Context context)
-    {
-    	try
-    	{
-        	//ウィジェットマネージャーの取得
-        	AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
-
-    		//リモートビューの取得
-            RemoteViews remoteView = getRemoteViews(context.getPackageName());
-
-            if(flgThinking)
-            {
-            	remoteView.setImageViewResource(or.liplisThinking, R.drawable.ico_thinking);
-            }
-            else
-            {
-            	remoteView.setImageViewResource(or.liplisThinking, R.drawable.ico_thinking_not);
-            }
-
-    		//ウィジェットの更新
-            appWidgetManager.updateAppWidget(appWidgetId, remoteView);
-
-            return true;
-    	}
-    	catch(Exception e)
-    	{
-    		return false;
-    	}
-    }
+//    protected boolean updateThinkingIcon(Context context)
+//    {
+//    	try
+//    	{
+//        	//ウィジェットマネージャーの取得
+//        	AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
+//
+//    		//リモートビューの取得
+//            RemoteViews remoteView = getRemoteViews(context.getPackageName());
+//
+//            if(flgThinking)
+//            {
+//            	remoteView.setImageViewResource(or.liplisThinking, R.drawable.ico_thinking);
+//            }
+//            else
+//            {
+//            	remoteView.setImageViewResource(or.liplisThinking, R.drawable.ico_thinking_not);
+//            }
+//
+//    		//ウィジェットの更新
+//            appWidgetManager.updateAppWidget(appWidgetId, remoteView);
+//
+//            return true;
+//    	}
+//    	catch(Exception e)
+//    	{
+//    		return false;
+//    	}
+//    }
 
     ///====================================================================
     ///
@@ -2028,6 +2121,12 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
     		flgAlarm = 11;
     	}
     }
+
+    /// <summary>
+    //  MethodType : child
+    /// MethodName : nextClick
+    /// 次のボタン押下
+    /// </summary>
     protected void nextClick(Context context)
     {
         try
@@ -2055,6 +2154,42 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
     	{
     	}
     }
+
+    /// <summary>
+    //  MethodType : child
+    /// MethodName : chatTalkSend
+    /// チャットトーク送信
+    /// </summary>
+    protected void chatTalkSend(Context context, String sentence)
+    {
+        try
+    	{
+        	//お休み中破回避
+        	if(flgSitdown){chatStop(); return;}
+
+        	//時計
+        	if(op.getLpsMode() == 4)
+        	{
+        		runClock(context);
+        	}
+        	//発言
+        	else
+        	{
+        		runLiplisChatTalk(AppWidgetManager.getInstance(context), context, sentence);
+        	}
+
+    	}
+    	catch(Exception e)
+    	{
+    	}
+    }
+
+
+    ///====================================================================
+    ///
+    ///                         　おしゃべり制御
+    ///
+    ///====================================================================
 
     /// <summary>
     /// MethodType : child
@@ -2091,12 +2226,55 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
         	//アイコンカウント
         	iconCloseCheck(context);
 
-        	//たち絵をデフォルトに戻す？
-        	//returnDefaultBody();
+        	//たち絵をデフォルトに戻す
         	setObjectBodyNeutral(context);
 
         	//トピックを取得する
         	getTopic(context);
+
+        	//チャット情報の初期化
+        	initChatInfo();
+
+        	//ニュースを取得しておしゃべり
+        	chatStart(context);
+    	}
+    	catch(Exception e)
+    	{
+    	}
+    }
+
+
+    /// <summary>
+    //  MethodType : child
+    /// MethodName : runLiplisChatTalk
+    ///
+    /// ver4.5 2015/01/11 おしゃべり応答追加
+    /// 行動する
+    /// </summary>
+    protected void runLiplisChatTalk(AppWidgetManager appWidgetManager, Context context, String sentence)
+    {
+        try
+    	{
+	    	//座り中なら回避
+	    	if(flgSitdown){chatStop(); return;}
+
+	    	//チャット中なら停止
+	    	if(flgChatting){chatStop();}
+
+	    	//ウインドウチェック ver3.0 2012/03/31
+	    	windowOn(context);
+
+        	//クロックチェック
+        	switchTalkClockCheck(false, context);
+
+        	//アイコンカウント
+        	iconCloseCheck(context);
+
+        	//たち絵をデフォルトに戻す
+        	setObjectBodyNeutral(context);
+
+        	//トピックを取得する
+        	getChatTalk(context, sentence);
 
         	//チャット情報の初期化
         	initChatInfo();
@@ -2177,25 +2355,55 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
     //  MethodType : child
     /// MethodName : getTopic
     /// トピックを取得する
+    ///
+    /// ver4.5 2015/01/11 updateThinkingIconは廃止のためコメントアウト
     /// </summary>
     protected void getTopic(Context context)
     {
         try
     	{
+        	flgChatTalk = false;
         	flgThinking = true;
-        	updateThinkingIcon(context);
+        	//updateThinkingIcon(context);
 
             getShortNews(context);
 
         	//flgGettingTopic = false;
 
         	flgThinking = false;
-        	updateThinkingIcon(context);
+        	//updateThinkingIcon(context);
     	}
     	catch(Exception e)
     	{
     		flgThinking = false;
-    		updateThinkingIcon(context);
+    		//updateThinkingIcon(context);
+    	}
+    }
+
+    /// <summary>
+    //  MethodType : child
+    /// MethodName : getChatTalk
+    /// チャットトークを取得する
+    ///
+    /// ver4.5 2015/01/11 updateThinkingIconは廃止のためコメントアウト
+    /// </summary>
+    protected void getChatTalk(Context context, String sentence)
+    {
+        try
+    	{
+        	flgChatTalk = true;
+        	flgThinking = true;
+        	//updateThinkingIcon(context);
+
+        	getChatTalkResponse(context,sentence);
+
+        	flgThinking = false;
+        	//updateThinkingIcon(context);
+    	}
+    	catch(Exception e)
+    	{
+    		flgThinking = false;
+    		//updateThinkingIcon(context);
     	}
     }
 

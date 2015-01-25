@@ -62,13 +62,13 @@ public class LiplisApi extends LiplisHttpPost{
         	{
         		//2013/03/01 ver3.1.0 Json方式に変更
         		//return new LiplisShortNewsJp().getShortNews(post(url,nameValuePair).getEntity().getContent());
-        		return new LiplisShortNewsJpJson().getShortNews(post(url,nameValuePair).getEntity().getContent());
+        		return new LiplisShortNewsJpJson().getChatTalkResponse(post(url,nameValuePair).getEntity().getContent());
         	}
         	else
         	{
         		//2013/03/01 ver3.1.0現在、こちらのロジックには来ない。
         		url = LiplisDefine.API_SHORT_NEWS_IN_URL;
-        		return  new LiplisShortNewsIn().getShortNews(post(url,nameValuePair).getEntity().getContent());
+        		return  new LiplisShortNewsIn().getChatTalkResponse(post(url,nameValuePair).getEntity().getContent());
         	}
 
         	//ニュースの取得

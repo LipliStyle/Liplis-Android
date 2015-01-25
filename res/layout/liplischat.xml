@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ================================================================ -->
+<!-- xmlName		: configuration.xml -->
+<!-- 概要			: コンフィグ画面定義 -->
+<!--  -->
+<!-- LiplisAndroidシステム -->
+<!-- Copyright(c) 2011-2011 sachin. All Rights Reserved. -->
+<!-- ================================================================ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/llChat"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.40"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnChatSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="送信" />
+
+        <EditText
+            android:id="@+id/txtChatSendText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+</LinearLayout>

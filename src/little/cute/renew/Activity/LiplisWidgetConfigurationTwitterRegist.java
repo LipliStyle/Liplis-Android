@@ -24,7 +24,6 @@ import little.cute.renew.Obj.ObjLpsBean;
 import little.cute.renew.Tsk.AsyncTwitterGetTwitterObject;
 import little.cute.renew.Tsk.AsyncTwitterInputPinCode;
 import twitter4j.Twitter;
-import twitter4j.TwitterException;
 import twitter4j.auth.AccessToken;
 import twitter4j.auth.RequestToken;
 import android.app.Activity;

@@ -30,7 +30,7 @@
 	<string name="control_topic_btn">話題設定</string>
 	<string name="control_topic_filter_btn">フィルタ</string>
 	<string name="control_topic_rss_btn">RSS</string>
-	<string name="control_topic_twitter_btn">ツイッター</string>
+	<string name="control_topic_twitter_btn">ツイッ"Z:/MyWork/リプリス_グラフィックス/80_リソース_アイコン/01_Android LiplisRenew/Liliアイコン.png"ター</string>
 
     <string name="control_site_title">リプリス サイトとヘルプ</string>
     <string name="control_intro_btn">説明画面</string>
@@ -41,7 +41,7 @@
     <string name="control_version_chekc">最新バージョンを確認する</string>
 
     <string name="control_market_title">リプリス Androidマーケット</string>
-    <string name="configure_market_btn">AndroidMarket Liplis Liliを開く</string>
+    <string name="configure_market_btn">AndroidMarketを開く</string>
     <string name="configure_market_txt">もしよろしければ、評価をお願いいたします。</string>
 
     <!-- セレクター関連メニュー-->

@@ -17,14 +17,17 @@ import java.util.List;
 import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
 
-import org.apache.http.NameValuePair;
-import android.content.Context;
-import android.util.Log;
 import little.cute.renew.Common.LiplisDefine;
 import little.cute.renew.Msg.MsgShortNews;
 import little.cute.renew.Ser.SerialLiplisNews;
 import little.cute.renew.Tsk.AsyncGetNewsRpAllTask;
 import little.cute.renew.Tsk.AsyncGetNewsTask;
+import little.cute.renew.Tsk.AsyncGetNewsTaskOne;
+
+import org.apache.http.NameValuePair;
+
+import android.content.Context;
+import android.util.Log;
 
 
 public class LiplisNews implements Serializable {
@@ -210,5 +213,16 @@ public class LiplisNews implements Serializable {
 		checkNewsQueue(context,nameValuePair);
 
 		return this.newsQueue.size() > 0;
+	}
+
+	/// <summary>
+    /// setOneNews
+	/// 1個のニュースをセットする
+    /// </summary>
+	public boolean setOneNews(Context context,List<NameValuePair> nameValuePair)
+	{
+		new AsyncGetNewsTaskOne(this, context, nameValuePair).execute("");
+
+		return true;
 	}
 }

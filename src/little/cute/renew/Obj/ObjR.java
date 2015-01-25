@@ -5,7 +5,7 @@ import little.cute.renew.Widget.LiplisWidgetLarge;
 import little.cute.renew.Widget.LiplisWidgetNormal;
 
 public class ObjR {
-	
+
 	public Class<?> cls;
 	public int layout;
 
@@ -15,34 +15,35 @@ public class ObjR {
 	public int liplisThinking;
 	public int liplisAngClock;
 	public int liplisBattery;
-	
+
+	public int llLpsChat;			//ver4.5 2015/01/11 追加
 	public int llLpsSleep;
 	public int llLpsLog;
 	public int llLpsSetting;
 	public int llLpsAngClock;
 	public int llLpsbattery;
-	
+
 	public int llTalkText;
 	public int liplisImage;
 	public int liplisWindow;
 	public int liplisTalkText;
 	public int llClockAndBattery;
-	
+
 	public int imYear1;
 	public int imYear2;
 	public int imYear3;
 	public int imYear4;
-	
+
 	public int imMonth1;
 	public int imMonth2;
 	public int imDay1;
 	public int imDay2;
-	
+
 	public int imHour1;
 	public int imHour2;
 	public int imMin1;
 	public int imMin2;
-	
+
 	public int imBattery01;
 	public int imBattery02;
 	public int imBattery03;
@@ -53,7 +54,7 @@ public class ObjR {
 	public int imBattery08;
 	public int imBattery09;
 	public int imBattery10;
-	
+
 	public ObjR(int size)
 	{
 		if(size == 1)
@@ -69,13 +70,13 @@ public class ObjR {
 			initNormal();
 		}
 	}
-	
+
 	public void initNormal()
 	{
 		cls = LiplisWidgetNormal.class;
-		
+
 		layout = R.layout.widget;
-		
+
 		liplisSleep=R.id.liplisSleep;
 		liplisLog=R.id.liplisLog;
 		liplisSetting=R.id.liplisSetting;
@@ -83,12 +84,13 @@ public class ObjR {
 		liplisAngClock=R.id.liplisAngClock;
 		liplisBattery=R.id.liplisBattery;
 
+		llLpsChat = R.id.llLpsThinking;
 		llLpsSleep = R.id.llLpsSleep;
 		llLpsLog = R.id.llLpsLog;
 		llLpsSetting = R.id.llLpsSetting;
 		llLpsAngClock = R.id.llLpsAngClock;
 		llLpsbattery = R.id.llLpsbattery;
-		
+
 		llTalkText = R.id.llTalkText;
 		liplisImage=R.id.liplisImage;
 		liplisWindow=R.id.liplisWindow;
@@ -121,13 +123,13 @@ public class ObjR {
 		imBattery09=R.id.imBattery09;
 		imBattery10=R.id.imBattery10;
 	}
-	
+
 	public void initLarge()
 	{
 		cls = LiplisWidgetLarge.class;
-		
+
 		layout = R.layout.widgetlarge;
-		
+
 		liplisSleep=R.id.liplisSleepLar;
 		liplisLog=R.id.liplisLogLar;
 		liplisSetting=R.id.liplisSettingLar;
@@ -135,12 +137,13 @@ public class ObjR {
 		liplisAngClock=R.id.liplisAngClockLar;
 		liplisBattery=R.id.liplisBatteryLar;
 
+		llLpsChat = R.id.llLpsThinkingLar;		//ver4.5 2015/01/11 追加
 		llLpsSleep = R.id.llLpsSleepLar;
 		llLpsLog = R.id.llLpsLogLar;
 		llLpsSetting = R.id.llLpsSettingLar;
 		llLpsAngClock = R.id.llLpsAngClockLar;
 		llLpsbattery = R.id.llLpsbatteryLar;
-		
+
 		llTalkText = R.id.llTalkTextLar;
 		liplisImage=R.id.liplisImageLar;
 		liplisWindow=R.id.liplisWindowLar;
@@ -173,5 +176,5 @@ public class ObjR {
 		imBattery09=R.id.imBattery09Lar;
 		imBattery10=R.id.imBattery10Lar;
 	}
-	
+
 }

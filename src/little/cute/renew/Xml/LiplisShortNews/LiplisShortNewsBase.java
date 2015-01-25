@@ -17,7 +17,7 @@ public interface LiplisShortNewsBase {
 	/// <summary>
     /// ショートニュースの取得
     /// </summary>
-	public MsgShortNews getShortNews(InputStream is);
+	public MsgShortNews getChatTalkResponse(InputStream is);
 	
     /// <summary>
     /// loadXml

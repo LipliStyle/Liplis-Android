@@ -41,7 +41,7 @@ public class LiplisHttpPost {
 
 
             //POST送信
-            httppost.setEntity(new UrlEncodedFormEntity(nameValuePair));
+            httppost.setEntity(new UrlEncodedFormEntity(nameValuePair, "utf-8"));
             HttpResponse response = httpclient.execute(httppost);
 
             //サーバーからの応答を取得

@@ -9,10 +9,10 @@
 <!--  Copyright(c) 2014 LipliStyle. All Rights Reserved.                   -->
 <!--=======================================================================-->
 <version>
-    <skin>4.2.0</skin>
-    <min>4.2.0</min>
-    <url>http://liplis.mine.nu/Xml/Version/Lili/version.xml</url>
-    <apkUrl>http://liplis.mine.nu/Xml/Version/Lili/LiplisAndroid.apk</apkUrl>
-    <skinUrl>http://liplis.mine.nu/Xml/Version/Lili/Lili.zip</skinUrl>
+    <skin>4.5.0</skin>
+    <min>4.5.0</min>
+    <url></url>
+    <apkUrl>http://liplis.mine.nu/Xml/Version/LiliRenew/LiplisAndroid.apk</apkUrl>
+    <skinUrl>http://liplis.mine.nu/Xml/Version/LiliRenew/LiliRenew.zip</skinUrl>
 </version>
 

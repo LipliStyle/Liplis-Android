@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="little.cute.renew" android:versionName="4.2.0" android:versionCode="34">
+    package="little.cute.renew" android:versionName="4.5.1" android:versionCode="36">
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-    <uses-sdk android:minSdkVersion="4"></uses-sdk>
+    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="9"></uses-sdk>
     <application
         android:icon="@drawable/icon"
         android:label="@string/app_name"
@@ -66,6 +66,7 @@
         <activity android:name=".Activity.LiplisWidgetConfigurationRssUrlRegist"></activity>
         <activity android:name=".Activity.LiplisWidgetConfigurationVoice"></activity>
         <activity android:name=".Activity.LiplisWidgetConfigurationSearchSettingRegist"></activity>
+        <activity android:name=".Activity.LiplisWidgetChat" android:theme="@android:style/Theme.Translucent"></activity>
 
     </application>
 <supports-screens
