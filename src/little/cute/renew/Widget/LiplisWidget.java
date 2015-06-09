@@ -57,6 +57,7 @@
 //2014/07/13 ver4.2.0 ニュートラル状態戻し追加
 //2015/01/11 ver4.5.0 話しかけ応答機能追加
 //                    考え中アイコン廃止 (updateThinkingIconメソッド廃止)
+//2015/06/09 ver4.5.2 Clalis4.1対応
 //
 //  LiplisAndroidシステム
 //  Copyright(c) 2011-2015 sachin. All Rights Reserved.

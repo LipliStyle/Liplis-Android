@@ -60,7 +60,7 @@ public class LiplisDefine {
     public static final String SITE_MAIN 	= "http://liplis.mine.nu";																		//メイン
     public static final String SITE_HELP 	= "http://liplis.mine.nu/lipliswiki/webroot/?LiplisAndroid%20Manual";							//ヘルプ
     public static final String SITE_MARKET 	= "https://play.google.com/store/apps/details?id=little.cute.renew";						//マーケット
-    public static final String SITE_MARKET_SMALL 	= "https://play.google.com/store/apps/details?id=little.cute.Smallapp";					//マーケット
+    public static final String SITE_MARKET_SMALL 	= "https://play.google.com/store/apps/details?id=little.cute.renew.Smallapp";					//マーケット
     //public static final String SITE_MARKET 	= "https://market.android.com/details?id=little.cute";										//マーケット(旧)
 
     ///=============================
@@ -68,8 +68,8 @@ public class LiplisDefine {
     public static final String API_SHORT_NEWS_TONE 		= "http://liplis.mine.nu/FileSystem/Xml/Tone/little.pretty.lilirenew.xml";										//トーンXMLL
 //    public static final String API_SHORT_NEWS_URL_NEW 	= "http://liplis.mine.nu/Clalis/v32/Liplis/ClalisForLiplisWeb.aspx";					//ショートニュースAPI
 //    public static final String API_SHORT_NEWS_URL_LSIT 	= "http://liplis.mine.nu/Clalis/v32/Liplis/ClalisForLiplisWebFx.aspx";					//ショートニュースリストAPI
-    public static final String API_SHORT_NEWS_URL_NEW 	= "http://liplis.mine.nu/Clalis/v40/Liplis/ClalisForLiplisWeb.aspx";					//ショートニュースAPI
-    public static final String API_SHORT_NEWS_URL_LSIT 	= "http://liplis.mine.nu/Clalis/v40/Liplis/ClalisForLiplisWebFx.aspx";					//ショートニュースリストAPI
+    public static final String API_SHORT_NEWS_URL_NEW 	= "http://liplis.mine.nu/Clalis/v41/Liplis/ClalisForLiplisWeb.aspx";					//ショートニュースAPI
+    public static final String API_SHORT_NEWS_URL_LSIT 	= "http://liplis.mine.nu/Clalis/v41/Liplis/ClalisForLiplisWebFx.aspx";					//ショートニュースリストAPI
     public static final String API_ONETIME_PASS		 	= "http://liplis.mine.nu/Clalis/v31/Liplis/ClalisForLiplisGetOnetimePass.aspx";			//ワンタイムパスワード要求API
     public static final String API_TWITTER_INFO_REGIST 	= "http://liplis.mine.nu/Clalis/v31/Liplis/ClalisForLiplisRegisterTwitterInfo.aspx";	//ツイッターユーザー登録API
     public static final String API_TWITTER_USER_ADD 		= "http://liplis.mine.nu/Clalis/v31/Liplis/ClalisForLiplisRegisterAddTwitterUser.aspx";	//ツイッターユーザー登録API
