@@ -236,7 +236,7 @@ public class ObjLiplisBody {
 			}
 		}catch(Exception e)
 		{
-			return normalList.get(0);
+			return getDefaultBody();
 		}
 	}
 	public int getLiplisBodyId(int emotion, int point ,int eyeState, int mouthState)
@@ -247,7 +247,7 @@ public class ObjLiplisBody {
 			return body.getLiplisBodyId(eyeState, mouthState);
 		}catch(Exception e)
 		{
-			return R.drawable.normal_1_1_1;
+			return getDefaultBody().getEye_1_c();
 		}
 	}
 
@@ -308,7 +308,7 @@ public class ObjLiplisBody {
 			Random rnd = new Random();
 			return lst.get(rnd.nextInt(lst.size()));
 		}
-		return normalList.get(0);
+		return getDefaultBody();
 	}
 
     /// <summary>

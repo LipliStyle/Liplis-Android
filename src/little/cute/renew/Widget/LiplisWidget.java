@@ -58,6 +58,7 @@
 //2015/01/11 ver4.5.0 話しかけ応答機能追加
 //                    考え中アイコン廃止 (updateThinkingIconメソッド廃止)
 //2015/06/09 ver4.5.2 Clalis4.1対応
+//2015/06/09 ver4.5.3 再配置するとろーでぃんぐなうになる問題を修正
 //
 //  LiplisAndroidシステム
 //  Copyright(c) 2011-2015 sachin. All Rights Reserved.
@@ -331,7 +332,8 @@ public class LiplisWidget extends AppWidgetProvider implements TextToSpeech.OnIn
     	try
     	{
     		//2013/11/17 ver3.6.0 終了済み(999)なら何もしない
-    		if(flgAlarm == 999){return ;}
+    		//2015/11/03 これを有効にしておくと、終了すると何もできなくなるため、修正
+    		//if(flgAlarm == 999){return ;}
 
     		//親のレシーブを実行しておく
     		super.onReceive(context, intent);
