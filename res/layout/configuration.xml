@@ -534,7 +534,7 @@
         android:padding="5dip" >
 
         <LinearLayout
-            android:id="@+id/llLiplisConfigButton"
+            android:id="@+id/llLiplisConfigButton2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="left"

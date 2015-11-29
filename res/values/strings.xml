@@ -214,7 +214,7 @@
 	<!--==============================================================================================-->
     <string name="voice_title">リプリスボイス設定</string>
     <string name="voice_title_intoro1">リプリスのおしゃべり時の音声に関する設定画面です。 </string>
-    <string name="voice_title_intoro2">音声機能を使用するにはAndoroidの設定も必要です。詳しくはヘルプをごらんください。 </string>
+    <string name="voice_title_intoro2">音声機能を使用するにはAndroidの設定も必要です。詳しくはヘルプをごらんください。 </string>
     <string name="voice_title_rate">ボイスレート設定</string>
     <string name="voice_title_pitch">ボイスピッチ設定</string>
 
